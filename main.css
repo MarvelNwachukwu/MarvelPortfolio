@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+}
+
+body #content {
+  padding-left: 5vw;
+  padding-top: 20vh;
+}
+
+body #content #text {
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vw;
+  line-height: 79px;
+}
+
+body #content #greetingText {
+  font-size: 1.2vw;
+  color: #969393;
+}
+
+body #content #about {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  max-width: 787px;
+  margin-top: 10px;
+}
+
+body #content #contactMe {
+  margin-top: 1rem;
+  height: 5vh;
+  width: 20vw;
+}
+
+body #content #contactMe #gitIcon, body #content #contactMe #instaIcon, body #content #contactMe #linkedinIcon {
+  display: inline-block;
+  margin-right: 5vh;
+}
+
+body #content #contactMe #gitIcon {
+  height: 5vh;
+  width: 5vh;
+  background: url(./asset/git.svg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+body #content #contactMe #instaIcon {
+  height: 5vh;
+  width: 5vh;
+  background: url(./asset/insta.svg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+body #content #contactMe #linkedinIcon {
+  height: 5vh;
+  width: 5vh;
+  background: url(./asset/linkedin.svg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-right: 0;
+}
+
+body #design {
+  position: relative;
+  height: 100vh;
+  background-color: #9494a1;
+}
+
+body #design .topPillars {
+  height: 30vh;
+  background-color: gold;
+}
+
+body #design .topPillars div:nth-child(1) {
+  position: absolute;
+  right: 70%;
+  width: 4.55px;
+  height: 38vh;
+  background: #C4C4C4;
+  display: inline-block;
+}
+
+body #design .topPillars div:nth-child(2) {
+  position: absolute;
+  right: 50%;
+  width: 4.55px;
+  height: 30vh;
+  background: #C4C4C4;
+  display: inline-block;
+}
+
+body #design .topPillars div:nth-child(3) {
+  position: absolute;
+  right: 30%;
+  width: 4.55px;
+  height: 38vh;
+  background: #C4C4C4;
+  display: inline-block;
+}
+
+body #design #image {
+  height: 25rem;
+  width: 18.75rem;
+  background: url(./asset/myIMG.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  border-radius: 300px;
+  z-index: 10;
+}
+
+body #design .bottomPillars {
+  height: 30vh;
+  background-color: gold;
+}
+
+body #design .bottomPillars div:nth-child(1) {
+  position: absolute;
+  width: 4.55px;
+  height: 104.41px;
+  background: #C4C4C4;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+body #design .bottomPillars div:nth-child(2) {
+  position: absolute;
+  right: 0;
+  width: 4.55px;
+  height: 104.41px;
+  background: #C4C4C4;
+  display: inline-block;
+  margin-left: 19%;
+}
+
+body #design .bottomPillars div:nth-child(3) {
+  position: absolute;
+  width: 4.55px;
+  height: 104.41px;
+  background: #C4C4C4;
+  display: inline-block;
+  margin-left: 17%;
+}
+/*# sourceMappingURL=main.css.map */
