@@ -35,6 +35,13 @@ body{
       margin-top: 10px;
     }
 
+    #demarcator{
+      margin-top: 1rem;
+      background-color: greenyellow;
+      height: 0.5rem;
+      width: 100%;
+    }
+
     #contactMe{
       margin-top: 1rem;
       height: 5vh;
@@ -80,81 +87,64 @@ body{
   #design{
     position: relative;
     height:100vh;
-    background-color: rgb(148, 148, 161);
 
-    .topPillars{
-      height: 30vh;
-      background-color: gold;
+    a{
+      text-decoration: none;
+    }
 
-      div:nth-child(1){
-        position: absolute;
-        right: 70%;
-        width: 4.55px;
-        height: 38vh;
-        background: #C4C4C4;
-        display: inline-block;
-        
+    #sayHello{
+      height: 2rem;
+      width: 8rem;
+      border-radius: 30px;
+      background-color: pink;
+      margin: 0 auto;
+      margin-top: 5vh;
+      display: grid;
+      grid-template-columns:70% 30%;
+
+      span{
+        margin: 0.6rem 0 0 1.25rem;
+        color: rgb(46, 45, 45);
+        font-family: Fira Code;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        // line-height: 79px;
       }
-      div:nth-child(2){
-        position: absolute;
-        right: 50%;
-        width: 4.55px;
-        height: 30vh;
-        background: #C4C4C4;
-        display: inline-block;
-        
-      }
-      div:nth-child(3){
-        position: absolute;
-        right:30%;
-        width: 4.55px;
-        height: 38vh;
-        background: #C4C4C4;
-        display: inline-block;
-        
+      
+      #sayHi-Img{
+        height: 100%;
+        width: 100%;
+        background: url(./asset/hi.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        // padding-right: 1rem;
       }
     }
+
     #image{
       height: 25rem;
-      width: 18.75rem ;
-      background: url(./asset/myIMG.svg);
+      width: 25rem ;
+      background: url(./asset/myIMG.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
-      margin:0 auto;
-      border-radius: 300px;
-      z-index: 10;
-    }
-    .bottomPillars{
-      height: 30vh;
-      background-color: gold;
-
-      div:nth-child(1){
-        position: absolute;
-        width: 4.55px;
-        height: 104.41px;
-        background: #C4C4C4;
-        display: inline-block;
-        margin-left: 30%;
-        
-      }
-      div:nth-child(2){
-        position: absolute;
-        right: 0;
-        width: 4.55px;
-        height: 104.41px;
-        background: #C4C4C4;
-        display: inline-block;
-        margin-left: 19%;
-      }
-      div:nth-child(3){
-        position: absolute;
-        width: 4.55px;
-        height: 104.41px;
-        background: #C4C4C4;
-        display: inline-block;
-        margin-left: 17%;
-      }
+      margin: auto;
+      margin-top: 23vh;
+      border-radius: 100px;
+      border: 5px solid black;
     }
   }
+}
+
+
+// Pseudo classes
+
+#gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover{
+  transform: scale(1.2);
+}
+
+#image:hover{
+  transform: scale(1.05);
 }

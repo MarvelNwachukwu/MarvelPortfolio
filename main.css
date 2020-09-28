@@ -38,6 +38,13 @@ body #content #about {
   margin-top: 10px;
 }
 
+body #content #demarcator {
+  margin-top: 1rem;
+  background-color: greenyellow;
+  height: 0.5rem;
+  width: 100%;
+}
+
 body #content #contactMe {
   margin-top: 1rem;
   height: 5vh;
@@ -80,83 +87,63 @@ body #content #contactMe #linkedinIcon {
 body #design {
   position: relative;
   height: 100vh;
-  background-color: #9494a1;
 }
 
-body #design .topPillars {
-  height: 30vh;
-  background-color: gold;
+body #design a {
+  text-decoration: none;
 }
 
-body #design .topPillars div:nth-child(1) {
-  position: absolute;
-  right: 70%;
-  width: 4.55px;
-  height: 38vh;
-  background: #C4C4C4;
-  display: inline-block;
+body #design #sayHello {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 30px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
 }
 
-body #design .topPillars div:nth-child(2) {
-  position: absolute;
-  right: 50%;
-  width: 4.55px;
-  height: 30vh;
-  background: #C4C4C4;
-  display: inline-block;
+body #design #sayHello span {
+  margin: 0.6rem 0 0 1.25rem;
+  color: #2e2d2d;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
 }
 
-body #design .topPillars div:nth-child(3) {
-  position: absolute;
-  right: 30%;
-  width: 4.55px;
-  height: 38vh;
-  background: #C4C4C4;
-  display: inline-block;
+body #design #sayHello #sayHi-Img {
+  height: 100%;
+  width: 100%;
+  background: url(./asset/hi.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
 body #design #image {
   height: 25rem;
-  width: 18.75rem;
-  background: url(./asset/myIMG.svg);
+  width: 25rem;
+  background: url(./asset/myIMG.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 0 auto;
-  border-radius: 300px;
-  z-index: 10;
+  margin: auto;
+  margin-top: 23vh;
+  border-radius: 100px;
+  border: 5px solid black;
 }
 
-body #design .bottomPillars {
-  height: 30vh;
-  background-color: gold;
+#gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-body #design .bottomPillars div:nth-child(1) {
-  position: absolute;
-  width: 4.55px;
-  height: 104.41px;
-  background: #C4C4C4;
-  display: inline-block;
-  margin-left: 30%;
-}
-
-body #design .bottomPillars div:nth-child(2) {
-  position: absolute;
-  right: 0;
-  width: 4.55px;
-  height: 104.41px;
-  background: #C4C4C4;
-  display: inline-block;
-  margin-left: 19%;
-}
-
-body #design .bottomPillars div:nth-child(3) {
-  position: absolute;
-  width: 4.55px;
-  height: 104.41px;
-  background: #C4C4C4;
-  display: inline-block;
-  margin-left: 17%;
+#image:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=main.css.map */
