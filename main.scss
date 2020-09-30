@@ -52,6 +52,7 @@ body{
       #gitIcon, #instaIcon, #linkedinIcon{
         display: inline-block;
         margin-right: 5vh;
+        transition: 1s;
       }
 
       #gitIcon{
@@ -128,14 +129,15 @@ body{
     #image{
       height: 25rem;
       width: 25rem ;
-      background: url(./asset/myIMG.png);
-      background-position: center;
+      background: url(./asset/me.png);
+      background-position: top;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
       margin: auto;
-      margin-top: 23vh;
+      margin-top: 16vh;
       border-radius: 100px;
       border: 5px solid black;
+      transition: 0.5s;
     }
   }
 }
@@ -144,11 +146,12 @@ body{
 // Pseudo classes
 
 #gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover{
-  transform: scale(1.2);
+  transform:rotate(359deg) scale(1.2) ;
 }
 
 #image:hover{
   transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
 }
 
 #sayHello:hover{

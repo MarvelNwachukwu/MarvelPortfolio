@@ -58,6 +58,8 @@ body #content #contactMe {
 body #content #contactMe #gitIcon, body #content #contactMe #instaIcon, body #content #contactMe #linkedinIcon {
   display: inline-block;
   margin-right: 5vh;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body #content #contactMe #gitIcon {
@@ -132,24 +134,28 @@ body #design #sayHello #sayHi-Img {
 body #design #image {
   height: 25rem;
   width: 25rem;
-  background: url(./asset/myIMG.png);
-  background-position: center;
+  background: url(./asset/me.png);
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin: auto;
-  margin-top: 23vh;
+  margin-top: 16vh;
   border-radius: 100px;
   border: 5px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: rotate(359deg) scale(1.2);
+          transform: rotate(359deg) scale(1.2);
 }
 
 #image:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
 }
 
 #sayHello:hover {
