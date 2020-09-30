@@ -3,13 +3,17 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% 35%;
-      grid-template-columns: 65% 35%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
 }
 
 body #content {
@@ -32,7 +36,7 @@ body #content #greetingText {
 
 body #content #about {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 5vmin;
   line-height: 44px;
   max-width: 787px;
   margin-top: 10px;
@@ -87,6 +91,7 @@ body #content #contactMe #linkedinIcon {
 body #design {
   position: relative;
   height: 100vh;
+  padding-right: 5vw;
 }
 
 body #design a {
@@ -150,5 +155,63 @@ body #design #image {
 #sayHello:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    display: inline-block;
+    width: 100%;
+  }
+  body #content {
+    float: left;
+    width: 50vw;
+  }
+  body #design {
+    float: right;
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: inline-block;
+    width: 100%;
+  }
+  body #content {
+    float: right;
+    width: 45%;
+    margin: 3vh 3vw 0 0;
+    padding: 0;
+  }
+  body #content h1 {
+    line-height: 36px;
+  }
+  body #content h1 #greetingText {
+    font-size: 1rem;
+  }
+  body #content h1 #about {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body #design {
+    margin: 3vh 0 0 3vw;
+    float: left;
+    width: 45%;
+  }
+  body #design #image {
+    margin: auto;
+    width: 30vmin;
+    height: 30vmin;
+    border: 2px solid black;
+  }
+  body #design #sayHello {
+    position: absolute;
+    top: 25vmin;
+    margin-left: 8vmin;
+    width: 20vmin;
+  }
+  body #design #sayHello span {
+    font-size: 1.75vmin;
+  }
 }
 /*# sourceMappingURL=main.css.map */

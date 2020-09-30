@@ -5,11 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body{
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 60% 40%;
 
   #content{
     padding-left: 5vw;
@@ -29,7 +30,7 @@ body{
     }
     #about{
       font-weight: 600;
-      font-size: 36px;
+      font-size: 5vmin;
       line-height: 44px;
       max-width: 787px;
       margin-top: 10px;
@@ -87,6 +88,7 @@ body{
   #design{
     position: relative;
     height:100vh;
+    padding-right: 5vw;
 
     a{
       text-decoration: none;
@@ -151,4 +153,80 @@ body{
 
 #sayHello:hover{
   transform: scale(1.05);
+}
+
+
+// media Queries
+
+@media only screen and (max-width: 1300px) {
+  body{
+    display: inline-block;
+    width: 100%;
+    
+    #content{
+      float: left;
+      width: 50vw;
+    }
+
+    #design{
+      float: right;
+      width: 40vw;
+    }
+  }
+  
+}
+
+// Ipads and Tablets
+
+@media only screen and (max-width: 800px) {
+  body{
+    display: inline-block;
+    width: 100%;
+
+    // content (formerly left section) becomes right section
+
+    #content{
+      float: right;
+      width: 45%;
+      margin: 3vh 3vw 0 0;
+      padding: 0;
+
+      h1{
+        line-height: 36px;
+        #greetingText{
+          font-size: 1rem;
+        }
+        #about{
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    // Design (formerly right section)  becomes left section  
+
+    #design{
+      margin: 3vh 0 0 3vw;
+      float: left;
+      width: 45%;
+
+      #image{
+        margin: auto;
+        width: 30vmin;
+        height: 30vmin;
+        border: 2px solid black;
+      }
+
+      #sayHello{
+        position: absolute;
+        top: 25vmin;
+        margin-left: 8vmin;
+        width: 20vmin;
+
+        span{
+          font-size: 1.75vmin;
+        }
+      }
+    }
+  }
 }
