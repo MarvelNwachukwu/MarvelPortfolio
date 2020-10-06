@@ -1,6 +1,6 @@
-// :root{
-//   filter: invert(1)hue-rotate(180deg);
-// }
+:root{
+  font-size: 16px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -186,50 +186,8 @@ body{
     display: inline-block;
     width: 100%;
 
-    // content (formerly left section) becomes right section
-
-    #content{
-      float: right;
-      width: 45%;
-      margin: 3vh 3vw 0 0;
-      padding: 0;
-
-      h1{
-        line-height: 36px;
-        #greetingText{
-          font-size: 1rem;
-        }
-        #about{
-          font-size: 2rem;
-          font-weight: 400;
-        }
-      }
-    }
-
-    // Design (formerly right section)  becomes left section  
-
-    #design{
-      margin: 3vh 0 0 3vw;
-      float: left;
-      width: 45%;
-
-      #image{
-        margin: auto;
-        width: 30vmin;
-        height: 30vmin;
-        border: 2px solid black;
-      }
-
-      #sayHello{
-        position: absolute;
-        top: 25vmin;
-        margin-left: 8vmin;
-        width: 20vmin;
-
-        span{
-          font-size: 1.75vmin;
-        }
-      }
+    #image{
+      height: 18.75rem;
     }
   }
 }

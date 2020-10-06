@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -183,41 +187,8 @@ body #design #image {
     display: inline-block;
     width: 100%;
   }
-  body #content {
-    float: right;
-    width: 45%;
-    margin: 3vh 3vw 0 0;
-    padding: 0;
-  }
-  body #content h1 {
-    line-height: 36px;
-  }
-  body #content h1 #greetingText {
-    font-size: 1rem;
-  }
-  body #content h1 #about {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  body #design {
-    margin: 3vh 0 0 3vw;
-    float: left;
-    width: 45%;
-  }
-  body #design #image {
-    margin: auto;
-    width: 30vmin;
-    height: 30vmin;
-    border: 2px solid black;
-  }
-  body #design #sayHello {
-    position: absolute;
-    top: 25vmin;
-    margin-left: 8vmin;
-    width: 20vmin;
-  }
-  body #design #sayHello span {
-    font-size: 1.75vmin;
+  body #image {
+    height: 18.75rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
