@@ -1,193 +1,366 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+:root {
   font-size: 16px;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  font-family: overpass;
 }
 
-body{
-  display: grid;
-  grid-template-columns: 60% 40%;
+body {
+  background-color: #000000;
+  color: white;
+}
 
-  #content{
-    padding-left: 5vw;
-    padding-top: 20vh;
-    #text{
-      font-family: Fira Code;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 3vw;
-      line-height: 79px;
-    }    
+#myDetails {
+  margin-left: 4rem;
+  margin-bottom: 15rem;
 
-    #greetingText{
-      font-size: 1.2vw;
-      color:#969393;
-      ;
+  #myInitial {
+    // box-sizing: border-box;
+    // padding-top: 0.5rem;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    margin-top: 100px;
+    height: 60px;
+    width: 70px;
+    background: #C4C4C4;
+    color: #8E329D;
+    border-radius: 10px;
+    // animation: bounce 0.75s 5;
+    cursor: auto;
+
+    &:hover {
+      animation: bounce 0.5s 2;
     }
-    #about{
-      font-weight: 600;
-      font-size: 5vmin;
-      line-height: 44px;
-      max-width: 787px;
-      margin-top: 10px;
-    }
-
-    #demarcator{
-      margin-top: 1rem;
-      background-color: greenyellow;
-      height: 0.5rem;
-      width: 100%;
-    }
-
-    #contactMe{
-      margin-top: 1rem;
-      height: 5vh;
-      width: 20vw;
-      // background-color: gold;
-
-      #gitIcon, #instaIcon, #linkedinIcon{
-        display: inline-block;
-        margin-right: 5vh;
-        transition: 1s;
-      }
-
-      #gitIcon{
-        height: 5vh;
-        width: 5vh;
-        background: url(./asset/git.svg);
-        background-position: center;
-        background-size: 90%;
-        background-repeat: no-repeat;
-      }
-      #instaIcon{
-        height: 5vh;
-        width: 5vh;
-        background: url(./asset/insta.svg);
-        background-position: center;
-        background-size: 90%;
-        background-repeat: no-repeat;
-
-      }
-
-      #linkedinIcon{
-        height: 5vh;
-        width: 5vh;
-        background: url(./asset/linkedin.svg);
-        background-position: center;
-        background-size: 90%;
-        background-repeat: no-repeat;
-        margin-right: 0;
-
-      }
-    }
-  }
-  
-  #design{
-    position: relative;
-    height:100vh;
-    padding-right: 5vw;
 
     a{
       text-decoration: none;
+      color: #8E329D;
     }
 
-    #sayHello{
-      height: 2rem;
-      width: 8rem;
-      border-radius: 30px;
-      background-color: pink;
-      margin: 0 auto;
-      margin-top: 5vh;
-      display: grid;
-      grid-template-columns:70% 30%;
-
-      span{
-        margin: 0.6rem 0 0 1.25rem;
-        color: rgb(46, 45, 45);
-        font-family: Fira Code;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        // line-height: 79px;
-      }
-      
-      #sayHi-Img{
-        height: 100%;
-        width: 100%;
-        background: url(./asset/hi.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        // padding-right: 1rem;
-      }
+    h2 {
+      padding-top: 0.5rem;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      user-select: none;
     }
+  }
 
-    #image{
-      height: 25rem;
-      width: 25rem ;
-      background: url(./asset/me.png);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
+  #intro {
+    margin-top: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 98px;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    width: 60%;
+
+    a {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+    }
+  }
+}
+
+
+#myPortfolio {
+  height: 4rem;
+  width: 10rem;
+  padding-top: 1.5%;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #8E329D;
+  animation: linearbounce 0.5s 5s infinite;
+
+  // &:hover{
+  //   animation: linearbounce 0.5s 2;;
+  // }
+}
+
+#showcase {
+  background: transparent;
+
+  .portfolio {
+    height: 500px;
+    width: 100%;
+    margin-top: 1rem;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    .portfolioIMG {
+      height: 320px;
+      width: 500px;
+      // max-width: 80%;
+      // max-height: 80%;
+      background: rgba(75, 72, 72, 0.39);
       margin: auto;
-      margin-top: 16vh;
-      border-radius: 100px;
-      border: 5px solid black;
-      transition: 0.5s;
+      position: relative;
+      border: 4px solid rgb(255, 255, 255);
+
+      &::after {
+        content: '';
+        height: 320px;
+        width: 500px;
+        background: rgba(46, 24, 24, 0.39);
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        border: 4px solid white;
+        opacity: 0.5;
+        z-index: -1;
+      }
     }
+
+    .portfolioText {
+      // background-color: rgba(88, 88, 39, 0.507);
+      // padding-top: 2rem;
+      // font-size: ;
+      h2{
+        margin-top: 4rem;
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+      }
+      p{
+        margin-top: 2rem;
+        margin-left:4rem;
+        margin-bottom: 6rem;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        width: 80%;
+        // max-width: 60%;
+      }
+      a{
+        position: relative;
+        left: 40%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .portfolioOne {
+    .portfolioIMG {
+      background: url(./asset/ToDo.svg);
+      background-position: 100%;
+      background-size: 110%;
+      background-repeat: no-repeat;
+
+      &::after {
+        background: url(./asset/ToDo.svg);
+        background-position: 100%;
+        background-size: 110%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .portfolioText {}
+  }
+
+  .portfolioTwo {
+    .portfolioIMG {
+      background: url(./asset/Lagos.svg);
+      background-position: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      &::after {
+        background: url(./asset/Lagos.svg);
+        background-position: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .portfolioText {}
+  }
+
+  .portfolioThree {
+    .portfolioIMG {
+      background: url(./asset/WeatherApp.svg);
+      background-position: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      &::after {
+        background: url(./asset/WeatherApp.svg);
+        background-position: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .portfolioText {}
+  }
+
+  .portfolioFour {
+    .portfolioIMG {
+      background: url(./asset/ChillSearch.svg);
+      background-position: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      &::after {
+        background: url(./asset/ChillSearch.svg);
+        background-position: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .portfolioText {}
+  }
+
+
+
+
+}
+
+
+.buttonEffect1 {
+	display: inline-block;
+	padding: 1rem 1.25rem .75rem 1.25rem;
+	border-radius: 10rem;
+	text-transform: uppercase;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 10rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: darken(rgba(255, 255, 255, 0.5), 15%);
+		transition: all .3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+.buttonEffect2 {
+	display: inline-block;
+	padding: 1rem 1.5rem .75rem 1.5rem;
+	border-radius: 10rem;
+	text-transform: uppercase;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+  z-index: 1;
+  border: 2px solid darken(rgba(255, 255, 255, 0.5), 15%);
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 10rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0%;
+		background-color: darken(rgba(255, 255, 255, 0.5), 15%);
+		transition: all .3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&::before {
+			height: 100%;
+    }
+    &::after{
+      width: 0%;
+    }
+	}
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px)rotate(0deg);
+    ;
+  }
+
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px)rotate(10deg);
+  }
+
+  75% {
+    transform: scale(1, 1.1) translate(0px, -25px)rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0px, 0px)rotate(-10deg);
   }
 }
 
-
-// Pseudo classes
-
-#gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover{
-  transform:rotate(359deg) scale(1.2) ;
-}
-
-#image:hover{
-  transform: scale(1.05);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
-}
-
-#sayHello:hover{
-  transform: scale(1.05);
-}
-
-
-// media Queries
-
-@media only screen and (max-width: 1300px) {
-  body{
-    display: inline-block;
-    width: 100%;
-    
-    #content{
-      float: left;
-      width: 50vw;
-    }
-
-    #design{
-      float: right;
-      width: 40vw;
-    }
+@keyframes linearbounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+    ;
   }
-  
-}
 
-// Ipads and Tablets
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px);
+  }
 
-@media only screen and (max-width: 800px) {
-  body{
-    display: inline-block;
-    width: 100%;
+  75% {
+    transform: scale(1, 1.1) translate(0px, -25px);
+  }
 
-    #image{
-      height: 18.75rem;
-    }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
   }
 }

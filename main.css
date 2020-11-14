@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 :root {
   font-size: 16px;
 }
@@ -7,188 +8,383 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: overpass;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+#myDetails {
+  margin-left: 4rem;
+  margin-bottom: 15rem;
+}
+
+#myDetails #myInitial {
+  text-align: center;
+  margin: 3rem 0 0 0;
+  margin-top: 100px;
+  height: 60px;
+  width: 70px;
+  background: #C4C4C4;
+  color: #8E329D;
+  border-radius: 10px;
+  cursor: auto;
+}
+
+#myDetails #myInitial:hover {
+  -webkit-animation: bounce 0.5s 2;
+          animation: bounce 0.5s 2;
+}
+
+#myDetails #myInitial a {
+  text-decoration: none;
+  color: #8E329D;
+}
+
+#myDetails #myInitial h2 {
+  padding-top: 0.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
-}
-
-body #content {
-  padding-left: 5vw;
-  padding-top: 20vh;
-}
-
-body #content #text {
-  font-family: Fira Code;
+#myDetails #intro {
+  margin-top: 2rem;
   font-style: normal;
-  font-weight: bold;
-  font-size: 3vw;
-  line-height: 79px;
-}
-
-body #content #greetingText {
-  font-size: 1.2vw;
-  color: #969393;
-}
-
-body #content #about {
   font-weight: 600;
-  font-size: 5vmin;
-  line-height: 44px;
-  max-width: 787px;
-  margin-top: 10px;
+  font-size: 64px;
+  line-height: 98px;
 }
 
-body #content #demarcator {
-  margin-top: 1rem;
-  background-color: greenyellow;
-  height: 0.5rem;
-  width: 100%;
+#myDetails p {
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  width: 60%;
 }
 
-body #content #contactMe {
-  margin-top: 1rem;
-  height: 5vh;
-  width: 20vw;
-}
-
-body #content #contactMe #gitIcon, body #content #contactMe #instaIcon, body #content #contactMe #linkedinIcon {
-  display: inline-block;
-  margin-right: 5vh;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-body #content #contactMe #gitIcon {
-  height: 5vh;
-  width: 5vh;
-  background: url(./asset/git.svg);
-  background-position: center;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-
-body #content #contactMe #instaIcon {
-  height: 5vh;
-  width: 5vh;
-  background: url(./asset/insta.svg);
-  background-position: center;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-
-body #content #contactMe #linkedinIcon {
-  height: 5vh;
-  width: 5vh;
-  background: url(./asset/linkedin.svg);
-  background-position: center;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  margin-right: 0;
-}
-
-body #design {
-  position: relative;
-  height: 100vh;
-  padding-right: 5vw;
-}
-
-body #design a {
+#myDetails p a {
   text-decoration: none;
+  font-style: italic;
+  color: white;
 }
 
-body #design #sayHello {
-  height: 2rem;
-  width: 8rem;
-  border-radius: 30px;
-  background-color: pink;
+#myPortfolio {
+  height: 4rem;
+  width: 10rem;
+  padding-top: 1.5%;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #c4c4c4;
   margin: 0 auto;
-  margin-top: 5vh;
+  border-radius: 10px;
+  color: #8E329D;
+  -webkit-animation: linearbounce 0.5s 5s infinite;
+          animation: linearbounce 0.5s 5s infinite;
+}
+
+#showcase {
+  background: transparent;
+}
+
+#showcase .portfolio {
+  height: 500px;
+  width: 100%;
+  margin-top: 1rem;
+  background: transparent;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
 }
 
-body #design #sayHello span {
-  margin: 0.6rem 0 0 1.25rem;
-  color: #2e2d2d;
-  font-family: Fira Code;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-body #design #sayHello #sayHi-Img {
-  height: 100%;
-  width: 100%;
-  background: url(./asset/hi.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-}
-
-body #design #image {
-  height: 25rem;
-  width: 25rem;
-  background: url(./asset/me.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+#showcase .portfolio .portfolioIMG {
+  height: 320px;
+  width: 500px;
+  background: rgba(75, 72, 72, 0.39);
   margin: auto;
-  margin-top: 16vh;
-  border-radius: 100px;
-  border: 5px solid black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  position: relative;
+  border: 4px solid white;
 }
 
-#gitIcon:hover, #instaIcon:hover, #linkedinIcon:hover {
-  -webkit-transform: rotate(359deg) scale(1.2);
-          transform: rotate(359deg) scale(1.2);
+#showcase .portfolio .portfolioIMG::after {
+  content: '';
+  height: 320px;
+  width: 500px;
+  background: rgba(46, 24, 24, 0.39);
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  border: 4px solid white;
+  opacity: 0.5;
+  z-index: -1;
 }
 
-#image:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
+#showcase .portfolio .portfolioText h2 {
+  margin-top: 4rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
 }
 
-#sayHello:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+#showcase .portfolio .portfolioText p {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 6rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  width: 80%;
 }
 
-@media only screen and (max-width: 1300px) {
-  body {
-    display: inline-block;
-    width: 100%;
+#showcase .portfolio .portfolioText a {
+  position: relative;
+  left: 40%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+#showcase .portfolioOne .portfolioIMG {
+  background: url(./asset/ToDo.svg);
+  background-position: 100%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioOne .portfolioIMG::after {
+  background: url(./asset/ToDo.svg);
+  background-position: 100%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioTwo .portfolioIMG {
+  background: url(./asset/Lagos.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioTwo .portfolioIMG::after {
+  background: url(./asset/Lagos.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioThree .portfolioIMG {
+  background: url(./asset/WeatherApp.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioThree .portfolioIMG::after {
+  background: url(./asset/WeatherApp.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioFour .portfolioIMG {
+  background: url(./asset/ChillSearch.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#showcase .portfolioFour .portfolioIMG::after {
+  background: url(./asset/ChillSearch.svg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.buttonEffect1 {
+  display: inline-block;
+  padding: 1rem 1.25rem .75rem 1.25rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.buttonEffect1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.buttonEffect1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 0.5);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.buttonEffect1:hover {
+  color: #fff;
+}
+
+.buttonEffect1:hover:before {
+  width: 100%;
+}
+
+.buttonEffect2 {
+  display: inline-block;
+  padding: 1rem 1.5rem .75rem 1.5rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid rgba(217, 217, 217, 0.5);
+}
+
+.buttonEffect2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.buttonEffect2:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(217, 217, 217, 0.5);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.buttonEffect2:hover {
+  color: #fff;
+}
+
+.buttonEffect2:hover::before {
+  height: 100%;
+}
+
+.buttonEffect2:hover::after {
+  width: 0%;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px) rotate(0deg);
+            transform: scale(1, 1) translate(0px, 0px) rotate(0deg);
   }
-  body #content {
-    float: left;
-    width: 50vw;
+  30% {
+    -webkit-transform: scale(1, 0.8) translate(0px, 10px) rotate(10deg);
+            transform: scale(1, 0.8) translate(0px, 10px) rotate(10deg);
   }
-  body #design {
-    float: right;
-    width: 40vw;
+  75% {
+    -webkit-transform: scale(1, 1.1) translate(0px, -25px) rotate(0deg);
+            transform: scale(1, 1.1) translate(0px, -25px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px) rotate(-10deg);
+            transform: scale(1, 1) translate(0px, 0px) rotate(-10deg);
   }
 }
 
-@media only screen and (max-width: 800px) {
-  body {
-    display: inline-block;
-    width: 100%;
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px) rotate(0deg);
+            transform: scale(1, 1) translate(0px, 0px) rotate(0deg);
   }
-  body #image {
-    height: 18.75rem;
+  30% {
+    -webkit-transform: scale(1, 0.8) translate(0px, 10px) rotate(10deg);
+            transform: scale(1, 0.8) translate(0px, 10px) rotate(10deg);
+  }
+  75% {
+    -webkit-transform: scale(1, 1.1) translate(0px, -25px) rotate(0deg);
+            transform: scale(1, 1.1) translate(0px, -25px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px) rotate(-10deg);
+            transform: scale(1, 1) translate(0px, 0px) rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes linearbounce {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
+  }
+  30% {
+    -webkit-transform: scale(1, 0.8) translate(0px, 10px);
+            transform: scale(1, 0.8) translate(0px, 10px);
+  }
+  75% {
+    -webkit-transform: scale(1, 1.1) translate(0px, -25px);
+            transform: scale(1, 1.1) translate(0px, -25px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@keyframes linearbounce {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
+  }
+  30% {
+    -webkit-transform: scale(1, 0.8) translate(0px, 10px);
+            transform: scale(1, 0.8) translate(0px, 10px);
+  }
+  75% {
+    -webkit-transform: scale(1, 1.1) translate(0px, -25px);
+            transform: scale(1, 1.1) translate(0px, -25px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
   }
 }
 /*# sourceMappingURL=main.css.map */
