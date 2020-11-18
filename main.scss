@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('./tabletview.css');
 
 :root {
   font-size: 16px;
@@ -38,7 +39,7 @@ body {
       animation: bounce 0.5s 2;
     }
 
-    a{
+    a {
       text-decoration: none;
       color: #8E329D;
     }
@@ -96,7 +97,7 @@ body {
 }
 
 #showcase {
-  background: transparent;
+  // background: transparent;
 
   .portfolio {
     height: 500px;
@@ -131,19 +132,21 @@ body {
     }
 
     .portfolioText {
+
       // background-color: rgba(88, 88, 39, 0.507);
       // padding-top: 2rem;
       // font-size: ;
-      h2{
+      h2 {
         margin-top: 4rem;
         text-align: center;
         font-style: normal;
         font-weight: 900;
         font-size: 36px;
       }
-      p{
+
+      p {
         margin-top: 2rem;
-        margin-left:4rem;
+        margin-left: 4rem;
         margin-bottom: 6rem;
         font-style: normal;
         font-weight: 900;
@@ -151,7 +154,8 @@ body {
         width: 80%;
         // max-width: 60%;
       }
-      a{
+
+      a {
         position: relative;
         left: 40%;
         margin: 0 auto;
@@ -242,90 +246,191 @@ body {
 
 }
 
+// Effects
+
 
 .buttonEffect1 {
-	display: inline-block;
-	padding: 1rem 1.25rem .75rem 1.25rem;
-	border-radius: 10rem;
-	text-transform: uppercase;
-	transition: all .3s;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(255, 255, 255, 0.5);
-		border-radius: 10rem;
-		z-index: -2;
-	}
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		background-color: darken(rgba(255, 255, 255, 0.5), 15%);
-		transition: all .3s;
-		border-radius: 10rem;
-		z-index: -1;
-	}
-	&:hover {
-		color: #fff;
-		&:before {
-			width: 100%;
-		}
-	}
+  display: inline-block;
+  padding: 1rem 1.25rem .75rem 1.25rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid darken(rgba(255, 255, 255, 0.5), 15%);
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(rgba(255, 255, 255, 0.5), 15%);
+    border-radius: 10rem;
+    z-index: -2;
+    transition: all .3s;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(rgba(255, 255, 255, 0.5), 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+
+    &::after {
+      width: 55%;
+    }
+  }
 }
 
 .buttonEffect2 {
-	display: inline-block;
-	padding: 1rem 1.5rem .75rem 1.5rem;
-	border-radius: 10rem;
-	text-transform: uppercase;
-	transition: all .3s;
-	position: relative;
-	overflow: hidden;
+  display: inline-block;
+  padding: 1rem 1.5rem .75rem 1.5rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
   z-index: 1;
   border: 2px solid darken(rgba(255, 255, 255, 0.5), 15%);
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		background-color: rgba(255, 255, 255, 0.5);
-		border-radius: 10rem;
-		z-index: -2;
-	}
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 0%;
-		background-color: darken(rgba(255, 255, 255, 0.5), 15%);
-		transition: all .3s;
-		border-radius: 10rem;
-		z-index: -1;
-	}
-	&:hover {
-		color: #fff;
-		&::before {
-			height: 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: darken(rgba(255, 255, 255, 0.5), 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      height: 100%;
     }
-    &::after{
+
+    &::after {
       width: 0%;
     }
-	}
+  }
 }
+
+.IGlinkEffects {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    // background-color: rgba(255, 255, 255, 0.5);
+
+  }
+
+  &:hover {
+    &::before {
+      content: '';
+      // height: 150%;
+      padding-top: 12.5%;
+      background: url(./asset/IG.svg);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.LNlinkEffects {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &:hover {
+    &::before {
+      content: '';
+      // height: 150%;
+      padding-top: 12.5%;
+      background: url(./asset/Linkedin.svg);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.GitLinkEffects {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &:hover {
+    &::before {
+      content: '';
+      // height: 150%;
+      padding-top: 12.5%;
+      background: url(./asset/gitIcon.svg);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Animations
 
 @keyframes bounce {
   0% {
@@ -364,3 +469,18 @@ body {
     transform: scale(1, 1) translate(0px, 0px);
   }
 }
+
+.notification{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: black;
+  padding: 0.25rem;
+  font-size: 18px;
+}
+
+
+// @media screen and (max-width: 1024px) {
+//   #intro{
+//     font-size: 48px;
+//   }
+// }

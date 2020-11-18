@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("./tabletview.css");
 :root {
   font-size: 16px;
 }
@@ -90,10 +91,6 @@ body {
   color: #8E329D;
   -webkit-animation: linearbounce 0.5s 5s infinite;
           animation: linearbounce 0.5s 5s infinite;
-}
-
-#showcase {
-  background: transparent;
 }
 
 #showcase .portfolio {
@@ -225,6 +222,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: 2px solid rgba(217, 217, 217, 0.5);
 }
 
 .buttonEffect1:after {
@@ -232,18 +230,20 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(217, 217, 217, 0.5);
   border-radius: 10rem;
   z-index: -2;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .buttonEffect1:before {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 0%;
   height: 100%;
   background-color: rgba(217, 217, 217, 0.5);
@@ -259,6 +259,10 @@ body {
 
 .buttonEffect1:hover:before {
   width: 100%;
+}
+
+.buttonEffect1:hover::after {
+  width: 55%;
 }
 
 .buttonEffect2 {
@@ -310,6 +314,78 @@ body {
 
 .buttonEffect2:hover::after {
   width: 0%;
+}
+
+.IGlinkEffects {
+  position: relative;
+}
+
+.IGlinkEffects::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.IGlinkEffects:hover::before {
+  content: '';
+  padding-top: 12.5%;
+  background: url(./asset/IG.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.LNlinkEffects {
+  position: relative;
+}
+
+.LNlinkEffects::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.LNlinkEffects:hover::before {
+  content: '';
+  padding-top: 12.5%;
+  background: url(./asset/Linkedin.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.GitLinkEffects {
+  position: relative;
+}
+
+.GitLinkEffects::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.GitLinkEffects:hover::before {
+  content: '';
+  padding-top: 12.5%;
+  background: url(./asset/gitIcon.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 @-webkit-keyframes bounce {
@@ -386,5 +462,13 @@ body {
     -webkit-transform: scale(1, 1) translate(0px, 0px);
             transform: scale(1, 1) translate(0px, 0px);
   }
+}
+
+.notification {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 0.25rem;
+  font-size: 18px;
 }
 /*# sourceMappingURL=main.css.map */
