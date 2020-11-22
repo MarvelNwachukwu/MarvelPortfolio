@@ -15,6 +15,7 @@
 body {
   background-color: #000000;
   color: white;
+  overflow-x: hidden;
 }
 
 #myDetails {
@@ -246,6 +247,287 @@ body {
 
 }
 
+// TechStack
+.myTechStack {
+  height: 4rem;
+  width: 10rem;
+  padding-top: 1.5%;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #8E329D;
+  animation: linearbounce 0.5s 5s infinite;
+}
+
+.techStack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10rem;
+  color: black;
+
+  .stackBox {
+    height: 380px;
+    width: 350px;
+    background: #c4c4c4;
+    margin: 2rem 0 0 2rem;
+    position: relative;
+
+    .stackIcon {
+      height: 50px;
+      width: 50px;
+      background: rgb(182, 47, 47);
+      display: inline-block;
+
+    }
+
+    h2 {
+      display: inline;
+      position: absolute;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 55px;
+      // left: calc((350px - 50px)/2);
+    }
+
+    p {
+      width: 80%;
+      margin-left: 10%;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .boxOne {
+    box-shadow: 2px 2px 2px 2px #E44D26;
+
+    .stackIcon {
+      background: url(./asset/HTML.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+  }
+
+  .boxTwo {
+    box-shadow: 2px 2px 2px 2px #264DE4;
+
+    .stackIcon {
+      background: url(./asset/CSS.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+  }
+
+  .boxThree {
+    box-shadow: 2px 2px 2px 2px #F7DF1E;
+
+    .stackIcon {
+      background: url(./asset/JavaScript.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+  }
+
+  .boxFour {
+    box-shadow: 2px 2px 2px 2px #00D8FF;
+
+    .stackIcon {
+      background: url(./asset/ReactHD.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      animation: rotatingReact 4s linear infinite;
+    }
+  }
+}
+
+// Tools
+
+.tools {
+  background-color: rgba(0, 0, 255, 0.349);
+  padding: 4rem 0 2rem 0;
+  background: rgba(255, 255, 255, 0.3);
+  border: 4px solid #FFFFFF;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .toolsText {
+    margin-top: 3rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .mytools {
+    background: transparent;
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;
+    display: inline-block;
+
+    .toolIcon {
+      // display: inline-block;
+      height: 100px;
+      width: 100px;
+      background: rgba(185, 177, 177, 0.459);
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 0 auto;
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      color: black;
+    }
+  }
+
+  .toolOne {
+    .toolIcon {
+      background: url(./asset/github.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 85%;
+    }
+  }
+
+  .toolTwo {
+    .toolIcon {
+      background: url(./asset/postman.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120%;
+    }
+  }
+
+  .toolThree {
+    .toolIcon {
+      background: url(./asset/figma.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200%;
+    }
+  }
+
+  .toolFour {
+    .toolIcon {
+      background: url(./asset/gitIcon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
+  }
+
+  .toolFive {
+    .toolIcon {
+      background: url(./asset/vsCode.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 90%;
+    }
+  }
+}
+
+
+// Say Hello 
+
+.sayHello {
+  background-color: #ffffff50;
+  color: #000;
+  padding-top: 1rem;
+
+  h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    // margin-left: 6rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    margin-left: 10%;
+    padding-bottom: 4rem;
+
+    input {
+      display: block;
+      background-color: #c4c4c4;
+      margin: 1rem;
+      width: 34.5rem;
+      height: 3.5rem;
+      padding-left: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      outline: none;
+
+    }
+
+    textarea {
+      display: inline-block;
+      margin: 1rem;
+      background: #c4c4c4;
+      width: 34.5rem;
+      outline: none;
+    }
+
+    button {
+      display: block;
+      margin: 1rem;
+      padding: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      border-radius: 300px;
+      outline: none;
+      border: none;
+      transition: .3s;
+      position: relative;
+      &:hover{
+        // cursor:url;
+        transform: scale(1.1);
+      }
+
+      &:active{
+        cursor: loading;
+        // &::before{
+        //   position: absolute;
+        //   height: 100px;
+        //   width: 100px;
+        //   background-color: yellowgreen;
+        //   content: '';
+
+        // }
+      }
+    }
+  }
+}
+
 // Effects
 
 
@@ -376,6 +658,7 @@ body {
     }
   }
 }
+
 .LNlinkEffects {
   position: relative;
 
@@ -470,7 +753,17 @@ body {
   }
 }
 
-.notification{
+@keyframes rotatingReact {
+  from {
+    transform: rotate(0deg);
+  }
+
+  To {
+    transform: rotate(360deg);
+  }
+}
+
+.notification {
   background-color: rgb(255, 255, 255);
   text-align: center;
   color: black;
