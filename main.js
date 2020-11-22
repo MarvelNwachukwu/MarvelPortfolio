@@ -1,1 +1,4 @@
-// alert('This does not represent the final quality of the website')
+// document.querySelector('form').addEventListener('submit', e => {
+//     e.preventDefault()
+//     console.log('Form Submitted')
+// })

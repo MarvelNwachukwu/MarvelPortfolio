@@ -15,6 +15,7 @@
 body {
   background-color: #000000;
   color: white;
+  overflow-x: hidden;
 }
 
 #myDetails {
@@ -210,6 +211,282 @@ body {
   background-position: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.myTechStack {
+  height: 4rem;
+  width: 10rem;
+  padding-top: 1.5%;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #8E329D;
+  -webkit-animation: linearbounce 0.5s 5s infinite;
+          animation: linearbounce 0.5s 5s infinite;
+}
+
+.techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10rem;
+  color: black;
+}
+
+.techStack .stackBox {
+  height: 380px;
+  width: 350px;
+  background: #c4c4c4;
+  margin: 2rem 0 0 2rem;
+  position: relative;
+}
+
+.techStack .stackBox .stackIcon {
+  height: 50px;
+  width: 50px;
+  background: #b62f2f;
+  display: inline-block;
+}
+
+.techStack .stackBox h2 {
+  display: inline;
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 55px;
+}
+
+.techStack .stackBox p {
+  width: 80%;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.techStack .boxOne {
+  -webkit-box-shadow: 2px 2px 2px 2px #E44D26;
+          box-shadow: 2px 2px 2px 2px #E44D26;
+}
+
+.techStack .boxOne .stackIcon {
+  background: url(./asset/HTML.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.techStack .boxTwo {
+  -webkit-box-shadow: 2px 2px 2px 2px #264DE4;
+          box-shadow: 2px 2px 2px 2px #264DE4;
+}
+
+.techStack .boxTwo .stackIcon {
+  background: url(./asset/CSS.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.techStack .boxThree {
+  -webkit-box-shadow: 2px 2px 2px 2px #F7DF1E;
+          box-shadow: 2px 2px 2px 2px #F7DF1E;
+}
+
+.techStack .boxThree .stackIcon {
+  background: url(./asset/JavaScript.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.techStack .boxFour {
+  -webkit-box-shadow: 2px 2px 2px 2px #00D8FF;
+          box-shadow: 2px 2px 2px 2px #00D8FF;
+}
+
+.techStack .boxFour .stackIcon {
+  background: url(./asset/ReactHD.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  -webkit-animation: rotatingReact 4s linear infinite;
+          animation: rotatingReact 4s linear infinite;
+}
+
+.tools {
+  background-color: rgba(0, 0, 255, 0.349);
+  padding: 4rem 0 2rem 0;
+  background: rgba(255, 255, 255, 0.3);
+  border: 4px solid #FFFFFF;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tools .toolsText {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.tools .mytools {
+  background: transparent;
+  height: 200px;
+  width: 200px;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+.tools .mytools .toolIcon {
+  height: 100px;
+  width: 100px;
+  background: rgba(185, 177, 177, 0.459);
+  margin: 0 auto;
+}
+
+.tools .mytools p {
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+.tools .toolOne .toolIcon {
+  background: url(./asset/github.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+}
+
+.tools .toolTwo .toolIcon {
+  background: url(./asset/postman.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.tools .toolThree .toolIcon {
+  background: url(./asset/figma.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.tools .toolFour .toolIcon {
+  background: url(./asset/gitIcon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.tools .toolFive .toolIcon {
+  background: url(./asset/vsCode.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
+.sayHello {
+  background-color: #ffffff50;
+  color: #000;
+  padding-top: 1rem;
+}
+
+.sayHello h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: .5rem;
+}
+
+.sayHello p {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.sayHello form {
+  margin-left: 10%;
+  padding-bottom: 4rem;
+}
+
+.sayHello form input {
+  display: block;
+  background-color: #c4c4c4;
+  margin: 1rem;
+  width: 34.5rem;
+  height: 3.5rem;
+  padding-left: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+}
+
+.sayHello form textarea {
+  display: inline-block;
+  margin: 1rem;
+  background: #c4c4c4;
+  width: 34.5rem;
+  outline: none;
+}
+
+.sayHello form button {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 300px;
+  outline: none;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+.sayHello form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sayHello form button:active {
+  cursor: loading;
 }
 
 .buttonEffect1 {
@@ -461,6 +738,28 @@ body {
   100% {
     -webkit-transform: scale(1, 1) translate(0px, 0px);
             transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes rotatingReact {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  To {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatingReact {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  To {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
