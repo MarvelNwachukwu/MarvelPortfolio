@@ -29,8 +29,8 @@ body {
   margin-top: 100px;
   height: 60px;
   width: 70px;
-  background: #C4C4C4;
-  color: #8E329D;
+  background: #c4c4c4;
+  color: #8e329d;
   border-radius: 10px;
   cursor: auto;
 }
@@ -42,7 +42,7 @@ body {
 
 #myDetails #myInitial a {
   text-decoration: none;
-  color: #8E329D;
+  color: #8e329d;
 }
 
 #myDetails #myInitial h2 {
@@ -60,7 +60,7 @@ body {
   margin-top: 2rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 4vw;
   line-height: 98px;
 }
 
@@ -89,9 +89,13 @@ body {
   background-color: #c4c4c4;
   margin: 0 auto;
   border-radius: 10px;
-  color: #8E329D;
+  color: #8e329d;
   -webkit-animation: linearbounce 0.5s 5s infinite;
           animation: linearbounce 0.5s 5s infinite;
+}
+
+#showcase {
+  padding: 2.5rem 0;
 }
 
 #showcase .portfolio {
@@ -115,7 +119,7 @@ body {
 }
 
 #showcase .portfolio .portfolioIMG::after {
-  content: '';
+  content: "";
   height: 320px;
   width: 500px;
   background: rgba(46, 24, 24, 0.39);
@@ -224,7 +228,7 @@ body {
   background-color: #c4c4c4;
   margin: 0 auto;
   border-radius: 10px;
-  color: #8E329D;
+  color: #8e329d;
   -webkit-animation: linearbounce 0.5s 5s infinite;
           animation: linearbounce 0.5s 5s infinite;
 }
@@ -279,8 +283,8 @@ body {
 }
 
 .techStack .boxOne {
-  -webkit-box-shadow: 2px 2px 2px 2px #E44D26;
-          box-shadow: 2px 2px 2px 2px #E44D26;
+  -webkit-box-shadow: 2px 2px 2px 2px #e44d26;
+          box-shadow: 2px 2px 2px 2px #e44d26;
 }
 
 .techStack .boxOne .stackIcon {
@@ -291,8 +295,8 @@ body {
 }
 
 .techStack .boxTwo {
-  -webkit-box-shadow: 2px 2px 2px 2px #264DE4;
-          box-shadow: 2px 2px 2px 2px #264DE4;
+  -webkit-box-shadow: 2px 2px 2px 2px #264de4;
+          box-shadow: 2px 2px 2px 2px #264de4;
 }
 
 .techStack .boxTwo .stackIcon {
@@ -303,8 +307,8 @@ body {
 }
 
 .techStack .boxThree {
-  -webkit-box-shadow: 2px 2px 2px 2px #F7DF1E;
-          box-shadow: 2px 2px 2px 2px #F7DF1E;
+  -webkit-box-shadow: 2px 2px 2px 2px #f7df1e;
+          box-shadow: 2px 2px 2px 2px #f7df1e;
 }
 
 .techStack .boxThree .stackIcon {
@@ -315,8 +319,8 @@ body {
 }
 
 .techStack .boxFour {
-  -webkit-box-shadow: 2px 2px 2px 2px #00D8FF;
-          box-shadow: 2px 2px 2px 2px #00D8FF;
+  -webkit-box-shadow: 2px 2px 2px 2px #00d8ff;
+          box-shadow: 2px 2px 2px 2px #00d8ff;
 }
 
 .techStack .boxFour .stackIcon {
@@ -329,10 +333,9 @@ body {
 }
 
 .tools {
-  background-color: rgba(0, 0, 255, 0.349);
   padding: 4rem 0 2rem 0;
   background: rgba(255, 255, 255, 0.3);
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   border-left: none;
   border-right: none;
   margin-bottom: 4rem;
@@ -420,7 +423,8 @@ body {
 .sayHello {
   background-color: #ffffff50;
   color: #000;
-  padding-top: 1rem;
+  padding-top: 4rem;
+  height: 100vh;
 }
 
 .sayHello h2 {
@@ -428,7 +432,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .sayHello p {
@@ -450,7 +454,7 @@ body {
   margin: 1rem;
   width: 34.5rem;
   height: 3.5rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -463,6 +467,10 @@ body {
   background: #c4c4c4;
   width: 34.5rem;
   outline: none;
+  padding-left: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .sayHello form button {
@@ -475,8 +483,8 @@ body {
   border-radius: 300px;
   outline: none;
   border: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: relative;
 }
 
@@ -491,11 +499,11 @@ body {
 
 .buttonEffect1 {
   display: inline-block;
-  padding: 1rem 1.25rem .75rem 1.25rem;
+  padding: 1rem 1.25rem 0.75rem 1.25rem;
   border-radius: 10rem;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -503,7 +511,7 @@ body {
 }
 
 .buttonEffect1:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -512,20 +520,20 @@ body {
   background-color: rgba(217, 217, 217, 0.5);
   border-radius: 10rem;
   z-index: -2;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .buttonEffect1:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 0%;
   height: 100%;
   background-color: rgba(217, 217, 217, 0.5);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
 }
@@ -544,11 +552,11 @@ body {
 
 .buttonEffect2 {
   display: inline-block;
-  padding: 1rem 1.5rem .75rem 1.5rem;
+  padding: 1rem 1.5rem 0.75rem 1.5rem;
   border-radius: 10rem;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -556,7 +564,7 @@ body {
 }
 
 .buttonEffect2:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -568,15 +576,15 @@ body {
 }
 
 .buttonEffect2:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 0%;
   background-color: rgba(217, 217, 217, 0.5);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
 }
@@ -598,7 +606,7 @@ body {
 }
 
 .IGlinkEffects::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 40%;
@@ -609,7 +617,7 @@ body {
 }
 
 .IGlinkEffects:hover::before {
-  content: '';
+  content: "";
   padding-top: 12.5%;
   background: url(./asset/IG.svg);
   background-position: center;
@@ -622,7 +630,7 @@ body {
 }
 
 .LNlinkEffects::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 40%;
@@ -633,7 +641,7 @@ body {
 }
 
 .LNlinkEffects:hover::before {
-  content: '';
+  content: "";
   padding-top: 12.5%;
   background: url(./asset/Linkedin.svg);
   background-position: center;
@@ -646,7 +654,7 @@ body {
 }
 
 .GitLinkEffects::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 40%;
@@ -657,7 +665,7 @@ body {
 }
 
 .GitLinkEffects:hover::before {
-  content: '';
+  content: "";
   padding-top: 12.5%;
   background: url(./asset/gitIcon.svg);
   background-position: center;
@@ -746,7 +754,7 @@ body {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  To {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -757,7 +765,7 @@ body {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  To {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -769,5 +777,69 @@ body {
   color: black;
   padding: 0.25rem;
   font-size: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.notification a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+  #myDetails {
+    margin-bottom: 8.5rem;
+  }
+  #myDetails #intro {
+    margin-top: 1rem;
+    line-height: normal;
+  }
+  #myDetails p {
+    margin-top: 1rem;
+    width: 75%;
+    font-size: 4vw;
+  }
+  #myDetails p a {
+    font-size: 3.75vw;
+  }
+  .myTechStack {
+    padding-top: 2.5%;
+    margin-bottom: 1.5rem;
+  }
+  .techStack .stackBox {
+    margin: 1rem 1rem 0 0.5rem;
+  }
+  .tools {
+    position: relative;
+  }
+  .tools .toolsText {
+    position: absolute;
+    margin-top: 0;
+    top: 5%;
+    right: 40%;
+  }
+  .tools .mytools {
+    margin-left: 1rem;
+  }
+  .tools .toolOne,
+  .tools .toolTwo,
+  .tools .toolThree {
+    margin-top: 1.5rem;
+  }
+  #showcase .portfolio {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  #showcase .portfolio .portfolioText {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #showcase .portfolio .portfolioText p {
+    margin-bottom: 3rem;
+  }
+  #showcase .portfolio .portfolioText a {
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
