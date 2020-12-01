@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-@import url('./tabletview.css');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("./tabletview.css");
 
 :root {
   font-size: 16px;
@@ -30,8 +30,8 @@ body {
     margin-top: 100px;
     height: 60px;
     width: 70px;
-    background: #C4C4C4;
-    color: #8E329D;
+    background: #c4c4c4;
+    color: #8e329d;
     border-radius: 10px;
     // animation: bounce 0.75s 5;
     cursor: auto;
@@ -42,7 +42,7 @@ body {
 
     a {
       text-decoration: none;
-      color: #8E329D;
+      color: #8e329d;
     }
 
     h2 {
@@ -58,7 +58,7 @@ body {
     margin-top: 2rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 4vw;
     line-height: 98px;
   }
 
@@ -77,7 +77,6 @@ body {
   }
 }
 
-
 #myPortfolio {
   height: 4rem;
   width: 10rem;
@@ -89,7 +88,7 @@ body {
   background-color: #c4c4c4;
   margin: 0 auto;
   border-radius: 10px;
-  color: #8E329D;
+  color: #8e329d;
   animation: linearbounce 0.5s 5s infinite;
 
   // &:hover{
@@ -98,7 +97,7 @@ body {
 }
 
 #showcase {
-  // background: transparent;
+  padding: 2.5rem 0;
 
   .portfolio {
     height: 500px;
@@ -119,7 +118,7 @@ body {
       border: 4px solid rgb(255, 255, 255);
 
       &::after {
-        content: '';
+        content: "";
         height: 320px;
         width: 500px;
         background: rgba(46, 24, 24, 0.39);
@@ -133,7 +132,6 @@ body {
     }
 
     .portfolioText {
-
       // background-color: rgba(88, 88, 39, 0.507);
       // padding-top: 2rem;
       // font-size: ;
@@ -185,7 +183,8 @@ body {
       }
     }
 
-    .portfolioText {}
+    .portfolioText {
+    }
   }
 
   .portfolioTwo {
@@ -203,7 +202,8 @@ body {
       }
     }
 
-    .portfolioText {}
+    .portfolioText {
+    }
   }
 
   .portfolioThree {
@@ -221,7 +221,8 @@ body {
       }
     }
 
-    .portfolioText {}
+    .portfolioText {
+    }
   }
 
   .portfolioFour {
@@ -239,12 +240,9 @@ body {
       }
     }
 
-    .portfolioText {}
+    .portfolioText {
+    }
   }
-
-
-
-
 }
 
 // TechStack
@@ -259,7 +257,7 @@ body {
   background-color: #c4c4c4;
   margin: 0 auto;
   border-radius: 10px;
-  color: #8E329D;
+  color: #8e329d;
   animation: linearbounce 0.5s 5s infinite;
 }
 
@@ -270,6 +268,7 @@ body {
   justify-content: center;
   margin-bottom: 10rem;
   color: black;
+  // background-color: rgb(175, 76, 76);
 
   .stackBox {
     height: 380px;
@@ -279,11 +278,11 @@ body {
     position: relative;
 
     .stackIcon {
+      // margin-top: 0.2rem;
       height: 50px;
       width: 50px;
       background: rgb(182, 47, 47);
       display: inline-block;
-
     }
 
     h2 {
@@ -306,7 +305,7 @@ body {
   }
 
   .boxOne {
-    box-shadow: 2px 2px 2px 2px #E44D26;
+    box-shadow: 2px 2px 2px 2px #e44d26;
 
     .stackIcon {
       background: url(./asset/HTML.svg);
@@ -317,7 +316,7 @@ body {
   }
 
   .boxTwo {
-    box-shadow: 2px 2px 2px 2px #264DE4;
+    box-shadow: 2px 2px 2px 2px #264de4;
 
     .stackIcon {
       background: url(./asset/CSS.svg);
@@ -328,7 +327,7 @@ body {
   }
 
   .boxThree {
-    box-shadow: 2px 2px 2px 2px #F7DF1E;
+    box-shadow: 2px 2px 2px 2px #f7df1e;
 
     .stackIcon {
       background: url(./asset/JavaScript.svg);
@@ -339,7 +338,7 @@ body {
   }
 
   .boxFour {
-    box-shadow: 2px 2px 2px 2px #00D8FF;
+    box-shadow: 2px 2px 2px 2px #00d8ff;
 
     .stackIcon {
       background: url(./asset/ReactHD.png);
@@ -354,10 +353,9 @@ body {
 // Tools
 
 .tools {
-  background-color: rgba(0, 0, 255, 0.349);
   padding: 4rem 0 2rem 0;
   background: rgba(255, 255, 255, 0.3);
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   border-left: none;
   border-right: none;
   margin-bottom: 4rem;
@@ -445,20 +443,20 @@ body {
   }
 }
 
-
-// Say Hello 
+// Say Hello
 
 .sayHello {
   background-color: #ffffff50;
   color: #000;
-  padding-top: 1rem;
+  padding-top: 4rem;
+  height: 100vh;
 
   h2 {
     text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   p {
@@ -480,12 +478,11 @@ body {
       margin: 1rem;
       width: 34.5rem;
       height: 3.5rem;
-      padding-left: 2rem;
+      padding-left: 1rem;
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
       outline: none;
-
     }
 
     textarea {
@@ -494,6 +491,10 @@ body {
       background: #c4c4c4;
       width: 34.5rem;
       outline: none;
+      padding-left: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
     }
 
     button {
@@ -506,14 +507,14 @@ body {
       border-radius: 300px;
       outline: none;
       border: none;
-      transition: .3s;
+      transition: 0.3s;
       position: relative;
-      &:hover{
+      &:hover {
         // cursor:url;
         transform: scale(1.1);
       }
 
-      &:active{
+      &:active {
         cursor: loading;
         // &::before{
         //   position: absolute;
@@ -530,20 +531,19 @@ body {
 
 // Effects
 
-
 .buttonEffect1 {
   display: inline-block;
-  padding: 1rem 1.25rem .75rem 1.25rem;
+  padding: 1rem 1.25rem 0.75rem 1.25rem;
   border-radius: 10rem;
   text-transform: uppercase;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   border: 2px solid darken(rgba(255, 255, 255, 0.5), 15%);
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -552,18 +552,18 @@ body {
     background-color: darken(rgba(255, 255, 255, 0.5), 15%);
     border-radius: 10rem;
     z-index: -2;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
     width: 0%;
     height: 100%;
     background-color: darken(rgba(255, 255, 255, 0.5), 15%);
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
@@ -583,17 +583,17 @@ body {
 
 .buttonEffect2 {
   display: inline-block;
-  padding: 1rem 1.5rem .75rem 1.5rem;
+  padding: 1rem 1.5rem 0.75rem 1.5rem;
   border-radius: 10rem;
   text-transform: uppercase;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   border: 2px solid darken(rgba(255, 255, 255, 0.5), 15%);
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -605,14 +605,14 @@ body {
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 0%;
     background-color: darken(rgba(255, 255, 255, 0.5), 15%);
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
@@ -634,7 +634,7 @@ body {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 40%;
@@ -643,12 +643,11 @@ body {
     font-size: 18px;
     text-align: center;
     // background-color: rgba(255, 255, 255, 0.5);
-
   }
 
   &:hover {
     &::before {
-      content: '';
+      content: "";
       // height: 150%;
       padding-top: 12.5%;
       background: url(./asset/IG.svg);
@@ -663,7 +662,7 @@ body {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 40%;
@@ -675,7 +674,7 @@ body {
 
   &:hover {
     &::before {
-      content: '';
+      content: "";
       // height: 150%;
       padding-top: 12.5%;
       background: url(./asset/Linkedin.svg);
@@ -690,7 +689,7 @@ body {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 40%;
@@ -702,7 +701,7 @@ body {
 
   &:hover {
     &::before {
-      content: '';
+      content: "";
       // height: 150%;
       padding-top: 12.5%;
       background: url(./asset/gitIcon.svg);
@@ -717,27 +716,25 @@ body {
 
 @keyframes bounce {
   0% {
-    transform: scale(1, 1) translate(0px, 0px)rotate(0deg);
-    ;
+    transform: scale(1, 1) translate(0px, 0px) rotate(0deg);
   }
 
   30% {
-    transform: scale(1, 0.8) translate(0px, 10px)rotate(10deg);
+    transform: scale(1, 0.8) translate(0px, 10px) rotate(10deg);
   }
 
   75% {
-    transform: scale(1, 1.1) translate(0px, -25px)rotate(0deg);
+    transform: scale(1, 1.1) translate(0px, -25px) rotate(0deg);
   }
 
   100% {
-    transform: scale(1, 1) translate(0px, 0px)rotate(-10deg);
+    transform: scale(1, 1) translate(0px, 0px) rotate(-10deg);
   }
 }
 
 @keyframes linearbounce {
   0% {
     transform: scale(1, 1) translate(0px, 0px);
-    ;
   }
 
   30% {
@@ -758,7 +755,7 @@ body {
     transform: rotate(0deg);
   }
 
-  To {
+  to {
     transform: rotate(360deg);
   }
 }
@@ -769,11 +766,97 @@ body {
   color: black;
   padding: 0.25rem;
   font-size: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+  }
 }
 
+// Media Queries
 
-// @media screen and (max-width: 1024px) {
-//   #intro{
-//     font-size: 48px;
-//   }
-// }
+@media screen and (max-width: 1024px) {
+  * {
+    // color: greenyellow;
+  }
+  #myDetails {
+    margin-bottom: 8.5rem;
+    #intro {
+      margin-top: 1rem;
+      line-height: normal;
+    }
+    p {
+      margin-top: 1rem;
+      width: 75%;
+      font-size: 4vw;
+
+      a {
+        font-size: 3.75vw;
+      }
+    }
+  }
+
+  // =======================TechStack======================
+
+  .myTechStack {
+    padding-top: 2.5%;
+    margin-bottom: 1.5rem;
+  }
+  .techStack {
+    .stackBox {
+      margin: 1rem 1rem 0 0.5rem;
+      // display: none;
+    }
+  }
+
+  // ===================== Tools ========================
+  .tools {
+    position: relative;
+    .toolsText {
+      position: absolute;
+      margin-top: 0;
+      top: 5%;
+      right: 40%;
+    }
+    .mytools {
+      margin-left: 1rem;
+      // display: none;
+    }
+    .toolOne,
+    .toolTwo,
+    .toolThree {
+      margin-top: 1.5rem;
+    }
+  }
+
+  #myPortfolio {
+  }
+
+  #showcase {
+    .portfolio {
+      display: inline-block;
+      margin-bottom: 2rem;
+      // grid-template-rows: 1fr 2fr;
+      .portfolioText {
+        // background: green;
+        width: 80%;
+        margin-left: 10%;
+
+        p {
+          margin-bottom: 3rem;
+        }
+        a {
+          margin-bottom: 2rem;
+        }
+      }
+      .portfolioIMG {
+        // width: 400px;
+      }
+    }
+  }
+
+  // End of Media Query
+}

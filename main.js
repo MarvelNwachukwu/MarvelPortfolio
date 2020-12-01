@@ -1,4 +1,6 @@
-// document.querySelector('form').addEventListener('submit', e => {
-//     e.preventDefault()
-//     console.log('Form Submitted')
-// })
+const nodeselector = (node) => {
+  return document.querySelector(node);
+};
+
+const techstackIndicator = nodeselector(".myTechStack");
+const techstack = nodeselector(".techStack");
