@@ -498,6 +498,69 @@ body {
   cursor: loading;
 }
 
+footer {
+  position: absolute;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer #navFooter {
+  margin-bottom: 3rem;
+}
+
+footer #navFooter a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 4rem;
+  text-transform: uppercase;
+}
+
+footer .socialmedialinks a {
+  text-decoration: none;
+}
+
+footer .socialmedialinks a div {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background-color: yellow;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+footer .socialmedialinks a #linkedIn {
+  margin-left: 0;
+  background: url(./asset/Linkedin.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .socialmedialinks a #twitter {
+  background: url(./asset/Twitter.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .socialmedialinks a #github {
+  background: url(./asset/gitIcon.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .socialmedialinks a #instagram {
+  background: url(./asset/IG.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .buttonEffect1 {
   display: inline-block;
   padding: 1rem 1.25rem 0.75rem 1.25rem;
