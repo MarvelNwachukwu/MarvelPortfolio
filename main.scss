@@ -530,6 +530,69 @@ body {
   }
 }
 
+footer {
+  position: absolute;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  width: 100%;
+  // background: rgba(170, 105, 105, 0.616);
+  position: relative;
+  bottom: 0;
+  #navFooter {
+    // background-color: rgba(150, 69, 69, 0.644);
+    margin-bottom: 3rem;
+    a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      margin-left: 4rem;
+      text-transform: uppercase;
+    }
+  }
+  .socialmedialinks {
+    a {
+      text-decoration: none;
+
+      div {
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        background-color: yellow;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+      }
+      #linkedIn {
+        margin-left: 0;
+        background: url(./asset/Linkedin.svg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #twitter {
+        background: url(./asset/Twitter.svg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #github {
+        background: url(./asset/gitIcon.svg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #instagram {
+        background: url(./asset/IG.svg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  p {
+    // color: yellow;
+  }
+}
+
 // Effects
 
 .buttonEffect1 {
