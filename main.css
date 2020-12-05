@@ -424,13 +424,12 @@ body {
   background-color: #ffffff50;
   color: #000;
   padding-top: 4rem;
-  height: 100vh;
 }
 
 .sayHello h2 {
   text-align: center;
-  font-style: normal;
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 900;
   font-size: 64px;
   margin-bottom: 0.5rem;
 }
@@ -517,6 +516,43 @@ footer #navFooter a {
   text-align: center;
   margin-left: 4rem;
   text-transform: uppercase;
+  position: relative;
+}
+
+footer #navFooter a::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  height: 5px;
+  width: 0%;
+  background-color: #ffffff88;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer #navFooter a::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  height: 5px;
+  width: 0%;
+  background-color: #ffffff88;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer #navFooter a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer #navFooter a:hover::before {
+  width: 50%;
+}
+
+footer #navFooter a:hover::after {
+  width: 50%;
 }
 
 footer .socialmedialinks a {
@@ -530,6 +566,11 @@ footer .socialmedialinks a div {
   background-color: yellow;
   margin-left: 2rem;
   margin-bottom: 3rem;
+}
+
+footer .socialmedialinks a div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer .socialmedialinks a #linkedIn {
