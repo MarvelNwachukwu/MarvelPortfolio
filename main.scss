@@ -449,12 +449,12 @@ body {
   background-color: #ffffff50;
   color: #000;
   padding-top: 4rem;
-  height: 100vh;
+  // height: 100vh;
 
   h2 {
     text-align: center;
-    font-style: normal;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 900;
     font-size: 64px;
     margin-bottom: 0.5rem;
   }
@@ -547,6 +547,36 @@ footer {
       text-align: center;
       margin-left: 4rem;
       text-transform: uppercase;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        height: 5px;
+        width: 0%;
+        background-color: #ffffff88;
+        transition: 0.2s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        right: 0;
+        height: 5px;
+        width: 0%;
+        background-color: #ffffff88;
+        transition: 0.3s;
+      }
+      &:hover {
+        transform: scale(1.1);
+        &::before {
+          width: 50%;
+        }
+        &::after {
+          width: 50%;
+        }
+      }
     }
   }
   .socialmedialinks {
@@ -560,6 +590,9 @@ footer {
         background-color: yellow;
         margin-left: 2rem;
         margin-bottom: 3rem;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
       #linkedIn {
         margin-left: 0;
