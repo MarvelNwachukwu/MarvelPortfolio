@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>Marvellous Nwachukwu</title>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
     <!-- Asayer Tracking Code for marvelcodes.xyz -->
     <script>
       (function (A, s, a, y, e, r) {
@@ -240,20 +242,22 @@
         a message, would respond ASAP!
       </p>
 
-      <form
-        action="https://getform.io/f/fd9d2b81-79fa-41da-ab6e-2ae4ff5fac8d"
-        method="POST"
-      >
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
+      <form method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" />
+        <input type="email" id="email" name="email" placeholder="Your Email" />
         <textarea
           type="text"
           name="message"
           rows="10"
+          id="message"
           placeholder="Your Message"
         ></textarea>
         <button type="submit">I'll take your message</button>
       </form>
+    </section>
+
+    <section id="feedback">
+      <h3 id="feedbackContent">Thanks, I’ll get back to you soon</h3>
     </section>
 
     <footer>

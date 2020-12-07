@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
-@import url("./tabletview.css");
 :root {
   font-size: 16px;
 }
@@ -422,6 +421,8 @@ body {
   background-color: #ffffff50;
   color: #000;
   padding-top: 4rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .sayHello h2 {
@@ -493,6 +494,19 @@ body {
 
 .sayHello form button:active {
   cursor: loading;
+}
+
+#feedback {
+  padding: 5rem 2.5rem;
+  background-color: grey;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+}
+
+#feedback h3 {
+  text-align: center;
+  font-size: 48px;
 }
 
 footer {
@@ -977,6 +991,15 @@ footer p {
   }
   .sayHello form button {
     margin-left: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    overflow-x: hidden;
+  }
+  .toolsText {
+    right: calc(80vw / 2.5);
   }
 }
 /*# sourceMappingURL=main.css.map */
