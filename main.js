@@ -6,38 +6,45 @@ const firebaseConfig = {
   storageBucket: "portfolio-34ba7.appspot.com",
   messagingSenderId: "1003466361573",
   appId: "1:1003466361573:web:2191f7c590134bbe74620c",
-  measurementId: "G-0X6WFP938H"
+  measurementId: "G-0X6WFP938H",
 };
 
-firebase.initializeApp(firebaseConfig)
+let flag;
 
-let db = firebase.firestore();
+const firebaseFunctions = (name, email, message) => {
+  firebase.initializeApp(firebaseConfig);
 
-db.collection('userMessages')
-.doc()
-.set({ 
-  user: 'akpan',
-  name: 'I want to hire',
-  massage: 'hey you free to work on something??'
-})
-.then((d) => {
-  alert('hey i got your message')
-})
-.catch(e => {
-  alert('hey, try again')
-})
+  let db = firebase.firestore();
 
-
-
-const nodeselector = (node) => {
-  return document.querySelector(node);
+  db.collection("userMessages")
+    .doc()
+    .set({
+      user: name,
+      Email: email,
+      message: message,
+    })
+    .then((d) => {
+      flag = true;
+    })
+    .catch((e) => {
+      flag = false;
+      document.querySelector("#feedbackContent").innerHTML =
+        "Sorry, there's been an error, Please Try Again";
+      console.log(e);
+    });
 };
 
-const techstackIndicator = nodeselector(".myTechStack");
-const techstack = nodeselector(".techStack");
-const portfolioIndicator = nodeselector("#myPortfolio");
-const portfolio = nodeselector(".portfolioText");
+const form = document.querySelector("form");
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const message = document.querySelector("#message");
 
+const techstackIndicator = document.querySelector(".myTechStack");
+const techstack = document.querySelector(".techStack");
+const portfolioIndicator = document.querySelector("#myPortfolio");
+const portfolio = document.querySelector(".portfolioText");
+
+// IntersectionObserver
 let observer = new IntersectionObserver((e) => {
   e.forEach((i) => {
     if (i.isIntersecting === true) {
@@ -61,10 +68,16 @@ let secondObserver = new IntersectionObserver((e) => {
 observer.observe(techstack);
 secondObserver.observe(portfolio);
 
-// JQuery
-// $(document).ready(function () {
-//   $(".myTechStack").hover(function () {
-//     console.log(true);
-//     $(".myTechStack").stop();
-//   });
-// });
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let userName = name.value;
+  let userEmail = email.value;
+  let userMessage = message.value;
+
+  firebaseFunctions(userName, userEmail, userMessage);
+
+  if ((flag = true)) {
+    document.querySelector("#hello").style.display = "none";
+    document.querySelector("#feedback").style.display = "block";
+  }
+});
