@@ -90,8 +90,6 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   color: #8e329d;
-  -webkit-animation: linearbounce 0.5s 5s infinite;
-          animation: linearbounce 0.5s 5s infinite;
 }
 
 #showcase {
@@ -229,8 +227,6 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   color: #8e329d;
-  -webkit-animation: linearbounce 0.5s 5s infinite;
-          animation: linearbounce 0.5s 5s infinite;
 }
 
 .techStack {
@@ -606,6 +602,11 @@ footer .socialmedialinks a #instagram {
 
 footer p {
   margin-bottom: 2rem;
+}
+
+.animatedButton {
+  -webkit-animation: linearbounce 0.5s 3s infinite;
+          animation: linearbounce 0.5s 3s infinite;
 }
 
 .buttonEffect1 {

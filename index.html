@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>Marvellous Nwachukwu</title>
+    <!-- Asayer Tracking Code for marvelcodes.xyz -->
+    <script>
+      (function (A, s, a, y, e, r) {
+        r = window.asayer = [s, r, e, [y - 1]];
+        s = document.createElement("script");
+        s.src = a;
+        s.async = !A;
+        document.getElementsByTagName("head")[0].appendChild(s);
+        r.start = function (v) {
+          r.push([0]);
+        };
+        r.stop = function (v) {
+          r.push([1]);
+        };
+        r.userID = function (id) {
+          r.push([2, id]);
+        };
+        r.userAnonymousID = function (id) {
+          r.push([3, id]);
+        };
+        r.metadata = function (k, v) {
+          r.push([4, k, v]);
+        };
+        r.event = function (k, p) {
+          r.push([5, k, p]);
+        };
+        r.active = function () {
+          return false;
+        };
+        r.sessionID = function () {};
+      })(0, 8625001671261335, "//static.asayer.io/tracker.js", 1, 29);
+    </script>
   </head>
 
   <body>
@@ -49,7 +81,7 @@
 
     <!--======================= TechStack ================== -->
 
-    <div class="myTechStack">My TechStack</div>
+    <div class="myTechStack animatedButton">My TechStack</div>
 
     <section class="techStack">
       <div class="stackBox boxOne">
@@ -131,7 +163,7 @@
     </section>
     <!--======================= My Portfolio ================== -->
 
-    <div id="myPortfolio">My Portfolio</div>
+    <div id="myPortfolio" class="animatedButton">My Portfolio</div>
 
     <section id="showcase">
       <div class="portfolio portfolioOne">
@@ -226,7 +258,7 @@
 
     <footer>
       <div id="navFooter">
-        <a href="./asset/11.2020 CV.pdf" download="Marvellous Nwachukwu Résumé"
+        <a href="./asset/myCV_NoIMG.pdf" download="Marvellous Nwachukwu Résumé"
           >RÉSUMÉ</a
         >
         <a href="https://dev.to/marvelnwachukwu">blog</a>
@@ -252,6 +284,7 @@
       <p>© Designed and Developed by Marvel.Codes</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

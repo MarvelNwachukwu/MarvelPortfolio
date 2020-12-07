@@ -89,7 +89,6 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   color: #8e329d;
-  animation: linearbounce 0.5s 5s infinite;
 
   // &:hover{
   //   animation: linearbounce 0.5s 2;;
@@ -258,7 +257,6 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   color: #8e329d;
-  animation: linearbounce 0.5s 5s infinite;
 }
 
 .techStack {
@@ -627,6 +625,12 @@ footer {
     // color: yellow;
     margin-bottom: 2rem;
   }
+}
+
+// Animated Classes
+
+.animatedButton {
+  animation: linearbounce 0.5s 3s infinite;
 }
 
 // Effects
