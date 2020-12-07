@@ -1,3 +1,34 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAUJUYbMzWuhghfwfD_sWL6BqdNGNGWEyk",
+  authDomain: "portfolio-34ba7.firebaseapp.com",
+  projectId: "portfolio-34ba7",
+  storageBucket: "portfolio-34ba7.appspot.com",
+  messagingSenderId: "1003466361573",
+  appId: "1:1003466361573:web:2191f7c590134bbe74620c",
+  measurementId: "G-0X6WFP938H"
+};
+
+firebase.initializeApp(firebaseConfig)
+
+let db = firebase.firestore();
+
+db.collection('userMessages')
+.doc()
+.set({ 
+  user: 'akpan',
+  name: 'I want to hire',
+  massage: 'hey you free to work on something??'
+})
+.then((d) => {
+  alert('hey i got your message')
+})
+.catch(e => {
+  alert('hey, try again')
+})
+
+
+
 const nodeselector = (node) => {
   return document.querySelector(node);
 };
