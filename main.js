@@ -28,8 +28,6 @@ const firebaseFunctions = (name, email, message) => {
     })
     .catch((e) => {
       flag = false;
-      document.querySelector("#feedbackContent").innerHTML =
-        "Sorry, there's been an error, Please Try Again";
       console.log(e);
     });
 };
@@ -74,10 +72,14 @@ form.addEventListener("submit", (e) => {
   let userEmail = email.value;
   let userMessage = message.value;
 
-  firebaseFunctions(userName, userEmail, userMessage);
-
-  if ((flag = true)) {
-    document.querySelector("#hello").style.display = "none";
-    document.querySelector("#feedback").style.display = "block";
+  if ((userMessage !== "") & (userEmail !== "")) {
+    firebaseFunctions(userName, userEmail, userMessage);
+    if ((flag = true)) {
+      document.querySelector("#hello").style.display = "none";
+      document.querySelector("#feedback").style.display = "block";
+    } else {
+      document.querySelector("#feedbackContent").innerHTML =
+        "There's been an error, please retry";
+    }
   }
 });
