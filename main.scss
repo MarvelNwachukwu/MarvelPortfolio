@@ -79,7 +79,7 @@ body {
 #myPortfolio {
   height: 4rem;
   width: 10rem;
-  padding-top: 1.5%;
+  padding-top: 1rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
@@ -247,7 +247,7 @@ body {
 .myTechStack {
   height: 4rem;
   width: 10rem;
-  padding-top: 1.5%;
+  padding-top: 1rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
@@ -921,7 +921,7 @@ footer {
   // =======================TechStack======================
 
   .myTechStack {
-    padding-top: 2.5%;
+    // padding-top: 1rem;
     margin-bottom: 1.5rem;
   }
   .techStack {
@@ -1010,13 +1010,24 @@ footer {
 
 // iPhones and Tablets
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 580px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     overflow-x: hidden;
   }
-  .toolsText {
-    // display: none;
-    // color: rgb(88, 61, 61);
-    right: calc(80vw / 2.5);
+
+  .myTechStack {
+    // padding-top: 1rem;
+  }
+  .tools {
+    position: relative;
+    .toolsText {
+      position: absolute;
+      top: 1rem;
+      left: 30%;
+      width: max-content;
+      margin: 0;
+      display: block;
+      // background: rgba(190, 90, 90, 0.418);
+    }
   }
 }
