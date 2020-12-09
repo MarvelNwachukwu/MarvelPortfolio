@@ -80,7 +80,7 @@ body {
 #myPortfolio {
   height: 4rem;
   width: 10rem;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
@@ -217,7 +217,7 @@ body {
 .myTechStack {
   height: 4rem;
   width: 10rem;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
@@ -900,6 +900,7 @@ footer p {
 .notification {
   background-color: white;
   text-align: center;
+  width: 100%;
   color: black;
   padding: 0.25rem;
   font-size: 18px;
@@ -930,7 +931,7 @@ footer p {
     font-size: 3.75vw;
   }
   .myTechStack {
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .techStack .stackBox {
     margin: 1rem 1rem 2rem 0.5rem;
@@ -1009,6 +1010,24 @@ footer p {
     width: max-content;
     margin: 0;
     display: block;
+  }
+  .tools .mytools {
+    margin: 0;
+  }
+  .tools .toolOne {
+    margin-top: 3rem;
+  }
+  #myPortfolio {
+    padding-top: 5%;
+  }
+  #showcase .portfolioIMG {
+    height: 220px;
+    width: 300px;
+  }
+  #showcase .portfolioIMG::after {
+    content: none;
+    height: 220px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
