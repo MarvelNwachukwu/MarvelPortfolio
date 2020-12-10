@@ -589,6 +589,9 @@ footer {
         }
       }
     }
+    a:nth-child(1) {
+      margin-left: 0;
+    }
   }
   .socialmedialinks {
     a {
@@ -1006,6 +1009,11 @@ footer {
     }
   }
 
+  footer {
+    #navFooter {
+    }
+  }
+
   // End of Media Query
 }
 
@@ -1056,9 +1064,11 @@ footer {
       }
       .portfolioText {
         h2 {
+          font-size: 20px;
         }
         p {
           margin-left: 2rem;
+          font-size: 16px;
         }
       }
     }
@@ -1092,9 +1102,6 @@ footer {
         &:after {
           content: none;
         }
-      }
-      a:nth-child(1) {
-        margin-left: 0;
       }
     }
   }
