@@ -1020,14 +1020,45 @@ footer p {
   #myPortfolio {
     padding-top: 5%;
   }
-  #showcase .portfolioIMG {
+  #showcase .portfolio .portfolioIMG {
     height: 220px;
     width: 300px;
   }
-  #showcase .portfolioIMG::after {
+  #showcase .portfolio .portfolioIMG::after {
     content: none;
     height: 220px;
     width: 300px;
+  }
+  #showcase .portfolio .portfolioText p {
+    margin-left: 2rem;
+  }
+  .sayHello form {
+    margin: 0;
+  }
+  .sayHello form input {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .sayHello form textarea {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .sayHello form button {
+    margin-left: 20%;
+  }
+  footer #navFooter a {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  footer #navFooter a::before {
+    content: none;
+  }
+  footer #navFooter a:after {
+    content: none;
+  }
+  footer #navFooter a:nth-child(1) {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

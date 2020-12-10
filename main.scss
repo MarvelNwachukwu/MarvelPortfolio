@@ -1043,14 +1043,58 @@ footer {
     padding-top: 5%;
   }
   #showcase {
-    .portfolioIMG {
-      height: 220px;
-      width: 300px;
-
-      &::after {
-        content: none;
+    .portfolio {
+      .portfolioIMG {
         height: 220px;
         width: 300px;
+
+        &::after {
+          content: none;
+          height: 220px;
+          width: 300px;
+        }
+      }
+      .portfolioText {
+        h2 {
+        }
+        p {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .sayHello {
+    form {
+      margin: 0;
+      input {
+        width: 90%;
+        margin-left: 5%;
+      }
+      textarea {
+        width: 90%;
+        margin-left: 5%;
+      }
+      button {
+        margin-left: 20%;
+      }
+    }
+  }
+  footer {
+    #navFooter {
+      a {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        &::before {
+          content: none;
+        }
+        &:after {
+          content: none;
+        }
+      }
+      a:nth-child(1) {
+        margin-left: 0;
       }
     }
   }
