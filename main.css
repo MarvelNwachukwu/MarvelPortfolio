@@ -567,6 +567,10 @@ footer #navFooter a:hover::after {
   width: 50%;
 }
 
+footer #navFooter a:nth-child(1) {
+  margin-left: 0;
+}
+
 footer .socialmedialinks a {
   text-decoration: none;
 }
@@ -1029,8 +1033,12 @@ footer p {
     height: 220px;
     width: 300px;
   }
+  #showcase .portfolio .portfolioText h2 {
+    font-size: 20px;
+  }
   #showcase .portfolio .portfolioText p {
     margin-left: 2rem;
+    font-size: 16px;
   }
   .sayHello form {
     margin: 0;
@@ -1056,9 +1064,6 @@ footer p {
   }
   footer #navFooter a:after {
     content: none;
-  }
-  footer #navFooter a:nth-child(1) {
-    margin-left: 0;
   }
   #feedback #feedbackContent {
     font-size: 36px;
