@@ -1060,5 +1060,8 @@ footer p {
   footer #navFooter a:nth-child(1) {
     margin-left: 0;
   }
+  #feedback #feedbackContent {
+    font-size: 36px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
