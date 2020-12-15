@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "firebase": "^8.1.2",
-    "normalize.css": "^8.0.1"
+    "firebase": "^8.1.2"
   }
 }
