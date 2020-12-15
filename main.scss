@@ -25,14 +25,11 @@ body {
     // box-sizing: border-box;
     // padding-top: 0.5rem;
     text-align: center;
-    margin: 3rem 0 0 0;
-    margin-top: 100px;
-    height: 60px;
+    margin: 6rem 0 0 0;
     width: 70px;
     background: #c4c4c4;
     color: #8e329d;
     border-radius: 10px;
-    // animation: bounce 0.75s 5;
     cursor: auto;
 
     &:hover {
@@ -77,9 +74,10 @@ body {
 }
 
 #myPortfolio {
-  height: 4rem;
+  // height: 4rem;
   width: 10rem;
-  padding-top: 1.25rem;
+  padding: 1rem 0;
+  // padding-top: 1.25rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
@@ -245,9 +243,10 @@ body {
 
 // TechStack
 .myTechStack {
-  height: 4rem;
+  // height: 4rem;
   width: 10rem;
-  padding-top: 1.25rem;
+  padding: 1rem 0;
+  // padding-top: 1.25rem;
   font-style: normal;
   text-align: center;
   font-weight: bold;
