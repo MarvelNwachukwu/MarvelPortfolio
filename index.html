@@ -3,263 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="./normalize/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Marvellous Nwachukwu</title>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
   </head>
-
   <body>
-    <!-- <div class="notification">
-      This site is still being
-      <a href="https://github.com/MarvelNwachukwu/MarvelPortfolio"></a>
-    </div> -->
-
-    <!--======================= intro================== -->
-
-    <section id="myDetails">
-      <div id="myInitial">
-        <a href="#hello">
-          <h2>M</h2>
-        </a>
-      </div>
-      <h2 id="intro">Hi, I'm Marvellous Nwachukwu</h2>
-      <p id="about">
-        I am a junior front-end web developer working on a career as a
-        full-stack developer.
-      </p>
-      <p>
-        Connect with me on
+    <div id="wrapper">
+      <input type="checkbox" />
+      <div id="menu">
+        <div class="button home_btn">Home</div>
+        <div class="button about_btn" href="#">About Me</div>
+        <div class="button connect_btn" href="#">Connect With Me</div>
+        <div class="button resume_btn" href="#">My Résumé</div>
+        <div class="button projects_btn" href="#">My Projects</div>
         <a
-          href="https://www.instagram.com/marvel.codes/"
+          href="https://translate.google.com/?hl=en&sl=auto&tl=la&text=Have%20a%20nice%20day&op=translate"
           target="_blank"
-          class="IGlinkEffects"
-          >Instagram</a
-        >,
-        <a
-          href="https://www.linkedin.com/in/marvellous-nwachukwu-834154196/"
-          target="_blank"
-          class="LNlinkEffects"
-          >Linkedin</a
+          >Bonum diem habeas</a
         >
-        or
-        <a href="https://github.com/MarvelNwachukwu" class="GitLinkEffects"
-          >GitHub</a
-        >
-      </p>
-    </section>
+      </div>
+      <div id="page">
+        <h1 id="home">Hi, I’m Marvellous Nwachukwu. A front-End Developer</h1>
 
-    <!--======================= TechStack ================== -->
-
-    <div class="myTechStack animatedButton">My TechStack</div>
-
-    <section class="techStack">
-      <div class="stackBox boxOne">
-        <div class="stackIcon"></div>
-        <h2>HTML</h2>
-        <p>
-          The dependency of the web made me love HTML, it was the first
-          programming language(technically a markup language) I learned. Writing
-          HTML alone without CSS for a while, I’ve learnt to write HTML
-          semantically, making it understandable by accessibility tools like
-          text to speech and screen readers.
-        </p>
-      </div>
-      <div class="stackBox boxTwo">
-        <div class="stackIcon"></div>
-        <h2>CSS</h2>
-        <p>
-          Growing up artistically limited, CSS gave me all the resources and
-          freedom I needed to be artistic. Currently, I write CSS for fun. As a
-          matter of fact, anytime I’m writing in a scripting language and I
-          encounter a developer’s block or a bug that I’m too mentally strained
-          to solve, I write more CSS to clear my mind. I also enjoy writing CSS
-          superset, SASS.
-        </p>
-      </div>
-      <div class="stackBox boxThree">
-        <div class="stackIcon"></div>
-        <h2>JavaScript</h2>
-        <p>
-          I’ve always loved JavaScript, I remember when I saw “The Light Bulb”
-          on W3School’s JavaScript page I was surprised, My exact reaction was
-          “Holy [bleep] JavaScript is magical”. Then it dawned on me that HTML
-          can be compared to drawing on a sheet of paper, CSS to painting that
-          drawing and JavaScript to breathing life into that drawing. Pushing
-          the limits of what I can do with JavaScript has been my motivation
-          while learning the language, and hopefully, It’ll always be.
-        </p>
-      </div>
-      <div class="stackBox boxFour">
-        <div class="stackIcon"></div>
-        <h2>React</h2>
-        <p>
-          When I found out that instead of manipulating the browser's DOM
-          directly, React creates a virtual DOM in memory, where it does all the
-          necessary manipulating, before making the changes in the browser DOM,
-          I got interested in the Library. I currently have beginner experience
-          in using the library, my first project was emulating the actions of a
-          shopping cart in an e-commerce website and updating shopping cart
-          without refreshing the DOM.
-        </p>
-      </div>
-    </section>
-
-    <!--======================= My Tools ================== -->
-
-    <section class="tools">
-      <h2 class="toolsText">My Tools</h2>
-
-      <div class="mytools toolOne">
-        <div class="toolIcon"></div>
-        <p>GitHub</p>
-      </div>
-      <div class="mytools toolTwo">
-        <div class="toolIcon"></div>
-        <p>POSTMAN</p>
-      </div>
-      <div class="mytools toolThree">
-        <div class="toolIcon"></div>
-        <p>FIGMA</p>
-      </div>
-      <div class="mytools toolFour">
-        <div class="toolIcon"></div>
-        <p>GIT</p>
-      </div>
-      <div class="mytools toolFive">
-        <div class="toolIcon"></div>
-        <p>VSCode</p>
-      </div>
-    </section>
-    <!--======================= My Portfolio ================== -->
-
-    <div id="myPortfolio" class="animatedButton">My Portfolio</div>
-
-    <section id="showcase">
-      <div class="portfolio portfolioOne">
-        <div class="portfolioIMG"></div>
-        <div class="portfolioText">
-          <h2>Vanilla To-Do App</h2>
+        <div id="contact" hidden>
           <p>
-            Over one weekend, I learned to use localstorage, I then made a small
-            to-do application that saves your tasks and allows you to access
-            them on various browser tabs offline.
+            Connect with me on <a href="#" target="_blank">Instagram</a>,
+            <a href="#" target="_blank">Linkedin</a> or
+            <a href="#" target="_blank">Twitter</a>
           </p>
-          <a
-            href="https://marvelnwachukwu.github.io/vannillaToDo/"
-            class="buttonEffect2"
-            target="_blank"
-            >Visit Site</a
-          >
         </div>
+        <div id="myResume">resume</div>
+        <div id="myProjects">projects</div>
+        <div id="aboutMe">aboutMe</div>
       </div>
-      <div class="portfolio portfolioTwo">
-        <div class="portfolioIMG"></div>
-        <div class="portfolioText">
-          <h2>Lagos Infopedia</h2>
-          <p>
-            I started working on this site to serve as an info-guide for the
-            city of Lagos, where I’ve lived for most of my life.
-          </p>
-          <a
-            href="https://marvelnwachukwu.github.io/Lagos/"
-            class="buttonEffect1"
-            target="_blank"
-            >Visit Site</a
-          >
-        </div>
-      </div>
-      <div class="portfolio portfolioThree">
-        <div class="portfolioIMG"></div>
-        <div class="portfolioText">
-          <h2>Vanilla Weather App</h2>
-          <p>
-            After learning about APIs, I built this weather app that gives you
-            the weather details on any city or location you search for.
-          </p>
-          <a
-            href="https://marvelnwachukwu.github.io/vanillaWeatherApp/"
-            class="buttonEffect2"
-            target="_blank"
-            >Visit Site</a
-          >
-        </div>
-      </div>
-      <div class="portfolio portfolioFour">
-        <div class="portfolioIMG"></div>
-        <div class="portfolioText">
-          <h2>Chill Search</h2>
-          <p>
-            Days after learning about APIs, I made major improvements on one of
-            my mentor’s first API requests.
-          </p>
-          <a
-            href="https://marvelnwachukwu.github.io/firstAPI/"
-            class="buttonEffect1"
-            target="_blank"
-            >Visit Site</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="sayHello" id="hello">
-      <h2>Say Hello</h2>
-      <p>
-        Want to reach out for hiring or just want to talk? Do feel free to send
-        a message, would respond ASAP!
-      </p>
-
-      <form method="POST">
-        <input type="text" id="name" name="name" placeholder="Your Name" />
-        <input type="email" id="email" name="email" placeholder="Your Email" />
-        <textarea
-          type="text"
-          name="message"
-          rows="10"
-          id="message"
-          placeholder="Your Message"
-        ></textarea>
-        <button type="submit">I'll take your message</button>
-      </form>
-    </section>
-
-    <section id="feedback">
-      <h3 id="feedbackContent">Thanks, I’ll get back to you soon 🙂</h3>
-    </section>
-
-    <footer>
-      <div id="navFooter">
-        <a href="./asset/myCV_NoIMG.pdf" download="Marvellous Nwachukwu Résumé"
-          >RÉSUMÉ</a
-        >
-        <a href="https://dev.to/marvelnwachukwu">blog</a>
-        <a href="#myDetails">about</a>
-        <a href="#showcase">portfolio</a>
-      </div>
-      <div class="socialmedialinks">
-        <a
-          href="https://www.linkedin.com/in/marvellous-nwachukwu-834154196/"
-          target="_blank"
-          ><div id="linkedIn"></div
-        ></a>
-        <a href="https://twitter.com/MornsCanCode"
-          ><div id="twitter" target="_blank"></div
-        ></a>
-        <a href="https://github.com/MarvelNwachukwu" target="_blank"
-          ><div id="github"></div
-        ></a>
-        <a href="https://www.instagram.com/marvel.codes/" target="_blank"
-          ><div id="instagram"></div
-        ></a>
-      </div>
-      <p>© Designed and Developed by Marvel.Codes</p>
-    </footer>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
-
-<!-- action="mailto:marvellousn561@gmail.com" -->
