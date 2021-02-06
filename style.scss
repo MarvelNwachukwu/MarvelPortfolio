@@ -116,7 +116,7 @@ a,
   p {
     font-size: 1rem;
     text-align: center;
-    color: rgba(0, 0, 0, 0.63);
+    color: rgba(0, 0, 0, 0.85);
     a {
       display: inline-block;
       font-family: $playball;
@@ -146,7 +146,7 @@ a,
   }
   .myDetails {
     font-size: 21px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.85);
   }
 }
 
@@ -161,11 +161,26 @@ a,
   }
 
   h3 {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.85);
     a {
       color: black;
       margin: 0;
       font-family: $playball;
+    }
+  }
+}
+
+#myProjects {
+  div {
+    display: block;
+    margin: 20vh auto;
+    // background: rgba(139, 56, 56, 0.486);
+    width: fit-content;
+    a {
+      text-align: center;
+      font-family: $playball;
+      color: black;
+      font-size: 24px;
     }
   }
 }
