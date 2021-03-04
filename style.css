@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #page {
@@ -216,6 +217,88 @@ a:hover,
     width: 2vw;
     height: 2vw;
     margin: 2.5vw;
+  }
+}
+
+#Tablet {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    background: #4e4747;
+  }
+  #wrapper {
+    display: none;
+  }
+  #Tablet {
+    display: block;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Playball", cursive;
+  }
+  #Tablet h1 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  #Tablet .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 1fr;
+        grid-template-columns: 0.5fr 1fr;
+    margin: 2rem 0;
+  }
+  #Tablet .grid h2,
+  #Tablet .grid p {
+    margin: 1rem;
+  }
+  #Tablet .connect h2 {
+    text-align: center;
+  }
+  #Tablet .connect .link {
+    margin: 0 auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #Tablet .connect .link a {
+    display: inline-block;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #Tablet .connect .link a div {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+  }
+  #Tablet .connect .link a .github {
+    background: url(./assets/github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #Tablet .connect .link a .twitter {
+    background: url(./assets/Twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #Tablet .connect .link a .resume {
+    background: url(./assets/resume.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #Tablet .connect .link a .instagram {
+    background: url(./assets/IG.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

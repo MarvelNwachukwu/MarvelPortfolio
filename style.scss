@@ -5,6 +5,7 @@ $monts: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #page {
@@ -195,6 +196,87 @@ a,
     margin: 2.5vw;
   }
 }
-
+// Hide
+#Tablet {
+  display: none;
+}
 // @media screen and (min-width: 480px) and (max-width: 1046px) {
 // }
+@media screen and (max-width: 1300px) {
+  body {
+    // width: 800px;
+    background: rgb(78, 71, 71);
+  }
+  #wrapper {
+    display: none;
+  }
+  #Tablet {
+    display: block;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    font-family: $playball;
+    h1 {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      margin: 2rem 0;
+
+      h2,
+      p {
+        margin: 1rem;
+      }
+    }
+
+    .connect {
+      // background: rgba(83, 190, 131, 0.507);
+      // display: flex;
+      // justify-content: center;
+      h2 {
+        text-align: center;
+      }
+      .link {
+        // background: chocolate;
+        margin: 0 auto;
+        width: max-content;
+        a {
+          display: inline-block;
+          height: max-content;
+          width: max-content;
+          div {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+          }
+          .github {
+            background: url(./assets/github.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          .twitter {
+            background: url(./assets/Twitter.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          .resume {
+            background: url(./assets/resume.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          .instagram {
+            background: url(./assets/IG.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+    }
+  }
+}
