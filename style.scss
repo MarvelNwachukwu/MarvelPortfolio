@@ -5,7 +5,6 @@ $monts: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 #page {
@@ -204,7 +203,6 @@ a,
 // }
 @media screen and (max-width: 1300px) {
   body {
-    // width: 800px;
     background: rgb(255, 255, 255);
   }
   #wrapper {
