@@ -205,14 +205,13 @@ a,
 @media screen and (max-width: 1300px) {
   body {
     // width: 800px;
-    background: rgb(78, 71, 71);
+    background: rgb(255, 255, 255);
   }
   #wrapper {
     display: none;
   }
   #Tablet {
     display: block;
-    background: rgb(255, 255, 255);
     height: 100vh;
     width: 100vw;
     font-family: $playball;

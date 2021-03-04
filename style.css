@@ -226,14 +226,13 @@ a:hover,
 
 @media screen and (max-width: 1300px) {
   body {
-    background: #4e4747;
+    background: white;
   }
   #wrapper {
     display: none;
   }
   #Tablet {
     display: block;
-    background: white;
     height: 100vh;
     width: 100vw;
     font-family: "Playball", cursive;
